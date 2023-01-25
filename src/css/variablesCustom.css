@@ -46,6 +46,7 @@
   --color-disabled: #666a3e;
   --color-hover: #737E13;
   --color-secondary: #97A619;
+  --color-tertiary: var(--color-secondary);
   --color: var(--m-white);
   --details-menu-single-p-margin: 0;
   --emotion-pictures-with-button-bg-background-color-custom: var(--color-secondary);
@@ -80,6 +81,9 @@
   --news-default-li-before-background-color-custom:var(--color-secondary); 
   --news-default-link-collection-padding-custom: 2em 0;
   --news-default-p-white-space-custom: pre-wrap;
+  --pagination-default-a-color-custom:var(--m-white);
+  --pagination-default-a-color-hover-custom:var(--color-secondary);
+  --pagination-default-background-color-custom:black;
   --teaser-overlay-bg-color-custom: var(--m-white);
   --teaser-plain-color-custom: var(--m-white);
   --teaser-plain-h2-margin-custom: 0;
