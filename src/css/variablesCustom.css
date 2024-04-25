@@ -81,6 +81,7 @@
   --news-default-li-before-background-color-custom:var(--color-secondary); 
   --news-default-link-collection-padding-custom: 2em 0;
   --news-default-p-white-space-custom: pre-wrap;
+  --news-default-li-before-left: -18px;
   --pagination-default-a-color-custom:var(--m-white);
   --pagination-default-a-color-hover-custom:var(--color-secondary);
   --pagination-default-background-color-custom:black;
