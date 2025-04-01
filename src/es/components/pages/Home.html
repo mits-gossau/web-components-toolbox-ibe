@@ -1,37 +1,33 @@
 <a-emotion-pictures namespace="emotion-pictures-with-logo-" height-mobile="15em">
     <a href="#">
-        <!-- <div>
-            <h2 class="bg-color font-size-big font-family-secondary">
-                Titel Mood Image 2
-            </h2>
-            <h2 class="bg-color font-family-secondary subline">Dein Feedback ist uns wichtig! Ob Komplimente, Fragen,
-                Kritik oder Wünsche - wir sind für dich da.</h2>
-            <div class="spacer-one">
-
-            </div>
-            <a-button namespace="button-primary-" href="/delivery/" target="_self" tabindex="0" role="link"
-                data-href="/delivery/">
-                Order now
-            </a-button>
-        </div> -->
         <a-picture picture-load defaultSource="../../../../img/emotion-pictures/emotion1.jpg" alt="randomized image">
         </a-picture>
     </a>
 </a-emotion-pictures>
 <div class="spacer"></div>
-<o-grid namespace="grid-2colums2rows-" first-container-horizontal>
-    <o-grid namespace="grid-2colums2rows-" first-container-horizontal>
-        <style>
-            :host {
-                --color-secondary: black;
-            }
-        </style>
-        <m-pagination answer-event-name="list-news" request-event-name="request-list-news"
-            namespace="pagination-default-"></m-pagination>
-    </o-grid>
-    <contentful-news-list answer-event-name="list-news" request-event-name="request-list-news"
-        namespace="news-list-default-"
-        news-url="/src/es/components/web-components-toolbox/docs/Template.html?rootFolder=src&css=/src/css/variablesCustom.css&logo=/src/es/components/atoms/logo/default-/default-.html&nav=/src/es/components/molecules/navigation/default-/default-.html&footer=/src/es/components/organisms/footer/default-/default-.html&content=/src/es/components/pages/News.html"
-        news-preview-namespace="">
-    </contentful-news-list>
-</o-grid>
+<div>
+<o-wrapper namespace="wrapper-teaser-">
+<m-teaser namespace=teaser-plain- width=33% href="http://www.jowa.ch">
+    <figure>
+        <figcaption>
+            <div>
+                <p class="bold">Nachhaltigkeit in der Gemeinschaftsgastronomie</p>
+                <h2 class="line-height-one-em">Weil es nur eine Erde gibt: Unser Engagement für eine nachhaltige
+                    Zukunft.</h2>
+                <a-arrow move="" hover-on-parent-shadow-root-host="" direction="right"></a-arrow>
+            </div>
+        </figcaption>
+    </figure>
+</m-teaser>
+<m-teaser namespace=teaser-overlay- href="http://www.jowa.ch">
+    <figure>
+        <a-picture namespace="picture-teaser-" picture-load defaultSource="../../../../img/gastro/teaser_geschnetzeltes.jpg"
+            alt="randomized image"></a-picture>
+        <figcaption>
+            <h2 class=bg-color>Unsere Angebote & Services</h2>
+            <h2 class=bg-color><a-arrow move direction=right></a-arrow></h2>
+        </figcaption>
+    </figure>
+</m-teaser>
+</o-wrapper>
+</div>
