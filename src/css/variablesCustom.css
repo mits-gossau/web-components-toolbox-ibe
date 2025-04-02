@@ -124,6 +124,8 @@
   --footer-default-invert-orange-background-color-custom:var(--m-orange-600);
   --footer-default-ul-list-style: none;
   --footer-default-a-font-size:0.875rem;
+  --footer-default-invert-a-color-hover-custom: var(--m-orange-600);
+  --footer-default-invert-orange-color-custom: var(--m-white);
   
   
   /* Header */
