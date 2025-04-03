@@ -113,8 +113,9 @@
   --emotion-pictures-with-title-subline-display-mobile-custom: none;
 
   /* Emotion Picture Corporate */
- --emotion-pictures-corporate-padding-custom:0 2rem;
- --emotion-pictures-corporate-img-max-height:55vh;
+  --emotion-pictures-corporate-padding-custom:0 1.15rem;
+  --emotion-pictures-corporate-padding-mobile-custom:0 1.15rem;
+  --emotion-pictures-corporate-img-max-height:50vh;
 
   /* Footer */
   --footer-default-h4-color: var(--m-black);

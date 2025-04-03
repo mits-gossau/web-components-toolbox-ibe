@@ -16,8 +16,81 @@ export default class GastroEmotionPictures extends EmotionPictures {
       :host {
         padding: var(--padding, 0);
       }
+      
+      .spickel_wrap {
+        width:66.6666666667%;
+        position: relative !important;
+      }
+      
+      .arrow_wrap {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+      
+      :host .spickel {
+        position: absolute;
+        top: -1px;
+      }
+
+      @media screen and (max-width: 767px) {
+        :host .spickel {
+          left: calc(55% - 12px);
+          border-top: 27px solid #fff;
+          border-right: 12px solid transparent;
+          border-left: 12px solid transparent;
+          top: -13px;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        :host .spickel {
+          left: calc(35% - 19.5px);
+          border-top: 39px solid #fff;
+          border-right: 17.5px solid transparent;
+          border-left: 17.5px solid transparent;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        :host .spickel {
+          left: calc(19% - 19.5px);
+          border-top: 43px solid #fff;
+          border-right: 19.5px solid transparent;
+          border-left: 19.5px solid transparent;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        :host .spickel {
+          left: calc(28.5% - 23px);
+          border-top: 51px solid #fff;
+          border-right: 23px solid transparent;
+          border-left: 23px solid transparent;
+        }
+      }
+      
+      @media screen and (min-width: 1400px) {
+        :host .spickel {
+          left: calc(41.5% - 30px);
+          border-top: 68px solid #fff;
+          border-right: 30px solid transparent;
+          border-left: 30px solid transparent;
+        }
+      }
+
+       @media screen and (min-width: 1680px) {
+        :host .spickel {
+          left: calc(53o - 37px);
+          border-top: 83px solid #fff;
+          border-right: 37px solid transparent;
+          border-left: 37px solid transparent;
+        }
+      }
+
       @media only screen and (max-width: _max-width_) {
         :host {
+          padding: var(--padding-mobile, 0);
         }
       }
     `
