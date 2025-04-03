@@ -73,9 +73,10 @@
   --a-text-underline-offset: 0.2em;
   
   /* Global */
+  --content-with-global: 70%;
   --bg-color: var(--m-white);
   --background-color: var(--m-white);
-  --any-content-width:70%;
+  --any-content-width:var(--content-with-global);
   --bull-li-before-border-width: 0;
   --bull-li-before-height: 0.3125em;
   --bull-li-before-top: 0.625em;
@@ -133,6 +134,7 @@
   --header-default-background-color-custom: var(--m-white);
   --header-default-padding: 1rem 0;
   --header-default-margin-custom:0;
+  --header-default-content-width:var(--content-with-global);
   
   /* Navigation */
   --navigation-default-padding-custom: 0 0 0 31rem;
@@ -149,8 +151,13 @@
   /* Teaser - Overlay */
   --teaser-overlay-bg-color-custom: var(--m-white);
 
+  /* Teaser - Tile */
+  --teaser-tile-h2-figcaption-color: var(--m-orange-600);
+
  
 }
+
+
 
 
 
