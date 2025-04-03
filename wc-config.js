@@ -109,7 +109,7 @@
         if (directory.separateFolder) url += `${`${fileName.slice(0, 1).toLowerCase()}${fileName.slice(1)}`.replace(`.${fileEnding}`, '')}${directory.separateFolderPlural ? 's' : ''}/`
         const importPath = `${/[./]{1}/.test(url.charAt(0)) ? '' : baseUrl}${url}${fileName}${query}`
         /** @type {ImportEl} */
-        const importEl = import(importPath).then(module => /** @returns {[string, CustomElementConstructor]} */ [tagName, module.default || module, undefined, importPath])
+        const importEl = import(importPath).then(module => /** @returns {[string, CustomElementConstructor]} */[tagName, module.default || module, undefined, importPath])
         if (src.searchParams.get('resolveImmediately') === 'true') resolve([importEl])
         return importEl
       }
@@ -207,6 +207,11 @@
     {
       selector: 'third-party-',
       url: 'web-components-toolbox/src/es/components/thirdParty/',
+      separateFolder: true
+    },
+    {
+      selector: 'gastro-a-',
+      url: 'atoms/',
       separateFolder: true
     }
   ] // directories
