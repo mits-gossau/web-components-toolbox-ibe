@@ -1,0 +1,3 @@
+:host {
+    --emotion-pictures-corporate-padding: var(--emotion-pictures-corporate-padding-custom, 0);
+}

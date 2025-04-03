@@ -13,8 +13,9 @@ export default class GastroEmotionPictures extends EmotionPictures {
   renderCSS () {
     super.renderCSS()
     this.css = /* css */ `
-      :host {}
-
+      :host {
+        padding: var(--padding, 0);
+      }
       @media only screen and (max-width: _max-width_) {
         :host {
         }

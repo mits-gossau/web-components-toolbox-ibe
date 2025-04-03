@@ -112,6 +112,10 @@
   --emotion-pictures-with-title-h2-text-transform-custom: none;
   --emotion-pictures-with-title-subline-display-mobile-custom: none;
 
+  /* Emotion Picture Corporate */
+ --emotion-pictures-corporate-padding-custom:0 2rem;
+ --emotion-pictures-corporate-img-max-height:55vh;
+
   /* Footer */
   --footer-default-h4-color: var(--m-black);
   --footer-default-h4-font-size: 1.125rem;
@@ -155,6 +159,8 @@
   --teaser-tile-h2-figcaption-color: var(--m-orange-600);
   --teaser-tile-p-font-size-custom:1em;
   --teaser-tile-p-line-height-custom: 1.5em;
+
+  
  
 }
 
