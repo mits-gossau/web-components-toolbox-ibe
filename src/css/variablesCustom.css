@@ -142,10 +142,10 @@
   --header-default-content-width:var(--content-with-global);
   
   /* Navigation */
-  --navigation-default-padding-custom: 0 0 0 31rem;
+  /* --navigation-default-padding-custom: 0 0 0 31rem;
   --navigation-default-color-custom: var(--m-black);
   --navigation-default-justify-content: flex-start;
-  --navigation-default-font-family-custom: HelveticaNowTextBold, Helvetica, Arial, sans-serif; 
+  --navigation-default-font-family-custom: HelveticaNowTextBold, Helvetica, Arial, sans-serif;  */
   
   /* Teaser - Plain */
   --teaser-plain-background-color-hover-custom: var(--color-tertiary);

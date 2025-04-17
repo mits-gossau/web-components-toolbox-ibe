@@ -213,6 +213,11 @@
       selector: 'gastro-a-',
       url: 'atoms/',
       separateFolder: true
+    },
+    {
+      selector: 'gastro-m-',
+      url: 'molecules/',
+      separateFolder: true
     }
   ] // directories
   // ↑↑↑ adjustable ↑↑↑
