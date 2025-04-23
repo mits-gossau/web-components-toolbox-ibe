@@ -64,6 +64,7 @@
   --color-disabled: #864142;
   --color-secondary: var(--m-orange-600);
   --color-tertiary: var(--m-red-600);
+  --color-quarternary: #eceae6;
 
   /* Content Links */
   --a-color: var(--color-secondary);
@@ -133,19 +134,27 @@
   
   /* Header */
   --header-default-a-logo-top-custom: calc(70px / 2 - 140px / 2);
+  --header-default-logo-width-custom: max(140px, 8vw);
   --header-default-a-logo-top-mobile-custom: 0;
   --header-default-a-menu-icon-background-color-custom: var(--color);
-  --header-default-logo-width-custom: 140px;
   --header-default-background-color-custom: var(--m-white);
   --header-default-padding: 1rem 0;
   --header-default-margin-custom:0;
-  --header-default-content-width:var(--content-with-global);
+  --header-default-content-width:var(--content-with-global); 
   
   /* Navigation */
-  /* --navigation-default-padding-custom: 0 0 0 31rem;
-  --navigation-default-color-custom: var(--m-black);
-  --navigation-default-justify-content: flex-start;
-  --navigation-default-font-family-custom: HelveticaNowTextBold, Helvetica, Arial, sans-serif;  */
+  --menu-background-color-custom: var(--m-white);
+  --navigation-gastro-section-background-color-custom: var(--m-white);
+  --navigation-gastro-background-color-open-custom:var(--m-white);
+  --navigation-gastro-padding-custom: 0 0 0 31rem;
+  --navigation-gastro-color-custom: var(--m-black);
+  --navigation-gastro-justify-content: flex-start;
+  --navigation-gastro-font-family-custom: HelveticaNowTextBold, Helvetica, Arial, sans-serif; 
+  --navigation-gastro-a-link-font-size-custom: 1.125em;
+  --navigation-gastro-color-custom: var(--color);
+  --navigation-gastro-not-open-color-active-custom: blue;
+  --navigation-gastro-color-active-custom:orange;
+  --navigation-gastro-background-color-hover-custom: var(--m-white);
   
   /* Teaser - Plain */
   --teaser-plain-background-color-hover-custom: var(--color-tertiary);
@@ -161,8 +170,6 @@
   --teaser-tile-p-font-size-custom:1em;
   --teaser-tile-p-line-height-custom: 1.5em;
 
-  
- 
 }
 
 
