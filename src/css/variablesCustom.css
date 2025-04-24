@@ -60,11 +60,16 @@
   /* Main Colors */
   --color: var(--m-black);
   --color-hover: #FF0000;
-  --color-active: #A21619;
+  /* --color-active: #A21619; */
   --color-disabled: #864142;
   --color-secondary: var(--m-orange-600);
   --color-tertiary: var(--m-red-600);
   --color-quarternary: #eceae6;
+
+  /* Fonts */
+  --font-family: HelveticaNowTextRegular, Helvetica, Arial, sans-serif;
+  --font-family-bold: HelveticaNowTextBold, Helvetica, Arial, sans-serif;
+  --font-size-mobile: min(15px, 5vw);
 
   /* Content Links */
   --a-color: var(--color-secondary);
@@ -72,12 +77,12 @@
   --a-text-decoration-hover: underline;
   --a-text-decoration: none;
   --a-text-underline-offset: 0.2em;
-  
+
   /* Global */
   --content-with-global: 70%;
   --bg-color: var(--m-white);
   --background-color: var(--m-white);
-  --any-content-width:var(--content-with-global);
+  --any-content-width: var(--content-with-global);
   --bull-li-before-border-width: 0;
   --bull-li-before-height: 0.3125em;
   --bull-li-before-top: 0.625em;
@@ -86,16 +91,9 @@
   /* Headings */
   /* --h1-font-family-secondary: HelveticaNowDisplayBold, Helvetica, Arial, sans-serif; */
 
-  /* Fonts */
-  --font-family: HelveticaNowTextRegular, Helvetica, Arial, sans-serif;
-  --font-family-bold: HelveticaNowTextBold, Helvetica, Arial, sans-serif;
-  --font-size-mobile: min(15px, 5vw);
-
-  /* Content Text */
-
   /* Buttons */
   --button-default-background-color-hover: var(--color-tertiary);
-  
+
   /* Emotion Pictures with button */
   --emotion-pictures-with-button-bg-background-color-custom: var(--color-secondary);
   --emotion-pictures-with-button-bg-color-custom: var(--m-white);
@@ -105,7 +103,7 @@
   /* Emotion Pictures with logo */
   --emotion-pictures-with-logo-bg-background-color-custom: var(--color-secondary);
   --emotion-pictures-with-logo-bg-color-custom: var(--m-white);
-  
+
   /* Emotion Pictures with title */
   --emotion-pictures-with-title-a-text-decoration: none;
   --emotion-pictures-with-title-bg-background-color-custom: var(--color-secondary);
@@ -114,24 +112,24 @@
   --emotion-pictures-with-title-subline-display-mobile-custom: none;
 
   /* Emotion Picture Corporate */
-  --emotion-pictures-corporate-padding-custom:0 1.15rem;
-  --emotion-pictures-corporate-padding-mobile-custom:0 1.15rem;
-  --emotion-pictures-corporate-img-max-height:50vh;
+  --emotion-pictures-corporate-padding-custom: 0 1.15rem;
+  --emotion-pictures-corporate-padding-mobile-custom: 0 1.15rem;
+  --emotion-pictures-corporate-img-max-height: 50vh;
 
   /* Footer */
   --footer-default-h4-color: var(--m-black);
   --footer-default-h4-font-size: 1.125rem;
   --footer-default-ul-li-line-height: 2rem;
-  --footer-default-h4-padding:0 0 0.5rem 0;
+  --footer-default-h4-padding: 0 0 0.5rem 0;
   --footer-default-h4-margin: 0 0 1.5rem 0;
   --footer-default-invert-color-custom: var(--m-black);
   --footer-default-invert-background-color-custom: var(--m-white);
-  --footer-default-invert-orange-background-color-custom:var(--m-orange-600);
+  --footer-default-invert-orange-background-color-custom: var(--m-orange-600);
   --footer-default-ul-list-style: none;
-  --footer-default-a-font-size:0.875rem;
+  --footer-default-a-font-size: 0.875rem;
   --footer-default-invert-a-color-hover-custom: var(--m-orange-600);
   --footer-default-invert-orange-color-custom: var(--m-white);
-  
+
   /* Header */
   --header-default-a-logo-top-custom: calc(70px / 2 - 140px / 2);
   --header-default-logo-width-custom: max(140px, 8vw);
@@ -139,40 +137,36 @@
   --header-default-a-menu-icon-background-color-custom: var(--color);
   --header-default-background-color-custom: var(--m-white);
   --header-default-padding: 1rem 0;
-  --header-default-margin-custom:0;
-  --header-default-content-width:var(--content-with-global); 
-  
+  --header-default-margin-custom: 0;
+  --header-default-content-width: var(--content-with-global);
+
   /* Navigation */
   --menu-background-color-custom: var(--m-white);
-  --navigation-gastro-section-background-color-custom: var(--m-white);
-  --navigation-gastro-background-color-open-custom:var(--m-white);
-  --navigation-gastro-padding-custom: 0 0 0 31rem;
-  --navigation-gastro-color-custom: var(--m-black);
-  --navigation-gastro-justify-content: flex-start;
-  --navigation-gastro-font-family-custom: HelveticaNowTextBold, Helvetica, Arial, sans-serif; 
   --navigation-gastro-a-link-font-size-custom: 1.125em;
-  --navigation-gastro-color-custom: var(--color);
-  --navigation-gastro-not-open-color-active-custom: blue;
-  --navigation-gastro-color-active-custom:orange;
   --navigation-gastro-background-color-hover-custom: var(--m-white);
-  
+  --navigation-gastro-background-color-open-custom: var(--m-white);
+  --navigation-gastro-color-custom: var(--color);
+  --navigation-gastro-font-family-custom: var(--font-family-bold);
+  --navigation-gastro-justify-content: flex-start;
+  --navigation-gastro-letter-spacing: -0.0125rem;
+  --navigation-gastro-not-open-color-active-custom: var(--m-orange-600);
+  --navigation-gastro-not-open-color-hover-custom: var(--m-orange-600);
+  --navigation-gastro-color-hover-custom: var(--m-orange-600);
+  --navigation-gastro-section-background-color-custom: var(--m-white);
+  --navigation-gastro-color-active-custom: var(--m-organge-600);
+
   /* Teaser - Plain */
   --teaser-plain-background-color-hover-custom: var(--color-tertiary);
-  --teaser-plain-border-radius-custom:0.25em;
+  --teaser-plain-border-radius-custom: 0.25em;
   --teaser-plain-color-custom: var(--m-white);
-  --teaser-plain-border-radius-mobile-custom:0.275em;
-  
+  --teaser-plain-border-radius-mobile-custom: 0.275em;
+
   /* Teaser - Overlay */
   --teaser-overlay-bg-color-custom: var(--m-white);
 
   /* Teaser - Tile */
   --teaser-tile-h2-figcaption-color: var(--m-orange-600);
-  --teaser-tile-p-font-size-custom:1em;
+  --teaser-tile-p-font-size-custom: 1em;
   --teaser-tile-p-line-height-custom: 1.5em;
 
 }
-
-
-
-
-
