@@ -59,7 +59,10 @@
 
   /* Main Colors */
   --color: var(--m-black);
-  --color-hover: #FF0000;
+  --color-hover: var(--m-orange-600);
+  --underline-color-hover-custom: var(--color-hover);
+  --underline-color-custom: var(--color);
+  --underline-after-height:1px;
   /* --color-active: #A21619; */
   --color-disabled: #864142;
   --color-secondary: var(--m-orange-600);
@@ -70,13 +73,15 @@
   --font-family: HelveticaNowTextRegular, Helvetica, Arial, sans-serif;
   --font-family-bold: HelveticaNowTextBold, Helvetica, Arial, sans-serif;
   --font-size-mobile: min(15px, 5vw);
+  --p-line-height: 1.75rem;
 
   /* Content Links */
   --a-color: var(--color-secondary);
-  --a-color-hover: var(--color-tertiary);
+  --a-color-hover: var(--m-orange-600);
   --a-text-decoration-hover: underline;
   --a-text-decoration: none;
   --a-text-underline-offset: 0.2em;
+  --a-transition:0.5;
 
   /* Global */
   --content-with-global: 70%;
@@ -90,6 +95,7 @@
 
   /* Headings */
   /* --h1-font-family-secondary: HelveticaNowDisplayBold, Helvetica, Arial, sans-serif; */
+  --h6-font-size: 1em;
 
   /* Buttons */
   --button-default-background-color-hover: var(--color-tertiary);
