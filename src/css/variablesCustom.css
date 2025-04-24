@@ -98,7 +98,7 @@
   --h6-font-size: 1em;
 
   /* Buttons */
-  --button-default-background-color-hover: var(--color-tertiary);
+  --button-default-background-color-hover: var(--color-hover);
 
   /* Emotion Pictures with button */
   --emotion-pictures-with-button-bg-background-color-custom: var(--color-secondary);
@@ -160,6 +160,7 @@
   --navigation-gastro-color-hover-custom: var(--m-orange-600);
   --navigation-gastro-section-background-color-custom: var(--m-white);
   --navigation-gastro-color-active-custom: var(--m-organge-600);
+  --navigation-gastro-border-color-active-custom:var(--m-orange-600);
 
   /* Teaser - Plain */
   --teaser-plain-background-color-hover-custom: var(--color-tertiary);
