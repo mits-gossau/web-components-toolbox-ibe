@@ -132,9 +132,10 @@
   --footer-default-invert-background-color-custom: var(--m-white);
   --footer-default-invert-orange-background-color-custom: var(--m-orange-600);
   --footer-default-ul-list-style: none;
-  --footer-default-a-font-size: 0.875rem;
   --footer-default-invert-a-color-hover-custom: var(--m-orange-600);
   --footer-default-invert-orange-color-custom: var(--m-white);
+  --footer-default-invert-orange-a-color-custom: var(--m-white);
+  --footer-default-invert-orange-a-color-hover-custom: var(--m-white);
 
   /* Header */
   --header-default-a-logo-top-custom: calc(70px / 2 - 140px / 2);

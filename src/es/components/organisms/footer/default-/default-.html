@@ -1,11 +1,12 @@
 <o-footer namespace="footer-default-">
-   <style>
-    :host footer {
-        --footer-default-footer-margin: 3rem 0 0 0;
-        padding: 1rem 0 0 0;
-        border-top: 1px solid var(--m-gray-500);
-    }
-   </style> 
+    <style>
+        :host footer {
+            --footer-default-footer-margin: 3rem 0 0 0;
+            padding: 1rem 0 0 0;
+            border-top: 1px solid var(--m-gray-500);
+            
+        }
+    </style>
     <div class="invert">
         <o-wrapper namespace="footer-default-" class="font-size-tiny">
             <div class=footer-links-row>
@@ -42,15 +43,47 @@
         </o-wrapper>
     </div>
     <div class="invert orange">
-        <!-- <style>
-            :host .invert.orange {
-                --footer-default-invert-background-color: var(--footer-default-invert-orange-background-color-custom, var(--color-secondary));
-            }
-        </style> -->
+
+
+        <div class="copyright-and-language">
+            <div class="footer-links font-size-tiny-desktop">
+                <ul>
+                    <li>©2025 Migros-Genossenschafts-Bund</li>
+                </ul>
+            </div>
+            <div class="language-switcher font-size-tiny-desktop">
+                <ul>
+                    <li>
+                        <a href=#>DE</a>
+                    </li>
+                    <li>
+                        <a href=#>FR</a>
+                    </li>
+                    <li>
+                        <a href=#>IT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="invert orange"> 
         <div class="footer-links font-size-tiny">
             <ul>
                 <li>© 2022 Genossenschaft Migros Zürich</li>
             </ul>
         </div>
-    </div>
+        <div class="language-switcher font-size-tiny-desktop">
+            <ul>
+                <li>
+                    <a href=#>DE</a>
+                </li>
+                <li>
+                    <a href=#>FR</a>
+                </li>
+                <li>
+                    <a href=#>EN</a>
+                </li>
+            </ul>
+        </div>
+    </div> -->
 </o-footer>
