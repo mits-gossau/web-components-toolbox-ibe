@@ -169,6 +169,8 @@
   --navigation-gastro-background-color-mobile-custom: var(--m-white);  
   /* --navigation-gastro-padding-mobile-custom: 0; */
   --navigation-gastro-padding-mobile-first-child-custom:0;
+  --navigation-gastro-padding-mobile-custom:0;
+  --navigation-gastro-a-link-content-spacing-no-scroll-custom:0;
 
   /* Teaser - Plain */
   --teaser-plain-background-color-hover-custom: var(--color-tertiary);
