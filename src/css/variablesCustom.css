@@ -107,6 +107,7 @@
   /* Emotion Pictures with logo */
   --emotion-pictures-with-logo-bg-background-color-custom: var(--color-secondary);
   --emotion-pictures-with-logo-bg-color-custom: var(--m-white);
+  --emotion-pictures-with-logo-img-max-height: 50vh;
 
   /* Emotion Pictures with title */
   --emotion-pictures-with-title-a-text-decoration: none;
