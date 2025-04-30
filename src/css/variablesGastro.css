@@ -80,6 +80,7 @@
   --bull-li-before-top: 0.625em;
   --bull-li-before-width: 0.3125em;
   --bull-li-before-left: -1em;
+  --ul-padding-left: 1em;
   --content-with-global: 70%;
   
   /* Content Links */
