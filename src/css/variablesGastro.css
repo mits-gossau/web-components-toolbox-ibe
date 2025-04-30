@@ -60,7 +60,7 @@
   /* Main Colors */
   --color: var(--m-black);
   --color-secondary: var(--m-orange-600);
-  --color-tertiary: var(--m-red-600);
+  --color-tertiary: #ff6600;
   --color-quarternary: #ECEAE6;
   --color-hover: var(--color-secondary);
   --color-disabled: #864142;
