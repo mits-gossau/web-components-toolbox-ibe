@@ -175,11 +175,12 @@
   --navigation-gastro-a-link-content-spacing-no-scroll-custom: 0;
 
   /* Teaser - Plain */
-  --teaser-plain-background-color-hover-custom: var(--color-tertiary);
+  --teaser-plain-background-color-hover-custom: var(--m-red-700);
   --teaser-plain-border-radius-custom: 0.25em;
   --teaser-plain-color-custom: var(--m-white);
   --teaser-plain-border-radius-mobile-custom: 0.275em;
-    --teaser-plain-figcaption-justify-content-custom: flex-start;
+  --teaser-plain-figcaption-border-radius: 0;
+  --teaser-plain-a-picture-margin-custom: 0 0 1em 0;
 
   /* Teaser - Overlay */
   --teaser-overlay-bg-color-custom: var(--m-white);
