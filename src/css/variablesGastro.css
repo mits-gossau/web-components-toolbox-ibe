@@ -179,6 +179,7 @@
   --teaser-plain-border-radius-custom: 0.25em;
   --teaser-plain-color-custom: var(--m-white);
   --teaser-plain-border-radius-mobile-custom: 0.275em;
+    --teaser-plain-figcaption-justify-content-custom: flex-start;
 
   /* Teaser - Overlay */
   --teaser-overlay-bg-color-custom: var(--m-white);
