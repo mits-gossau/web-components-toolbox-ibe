@@ -16,6 +16,10 @@ export default class GastroEmotionPictures extends EmotionPictures {
       :host {
         padding: var(--padding, 0);
       }
+      :host([with-border]) {
+        padding-left: 0;
+        padding-right: 0;
+      }
       
       .spickel_wrap {
         width:66.6666666667%;
@@ -39,7 +43,7 @@ export default class GastroEmotionPictures extends EmotionPictures {
           border-top: 27px solid #fff;
           border-right: 12px solid transparent;
           border-left: 12px solid transparent;
-          top: -13px;
+          top: -6px;
         }
       }
 
@@ -81,7 +85,7 @@ export default class GastroEmotionPictures extends EmotionPictures {
 
        @media screen and (min-width: 1680px) {
         :host .spickel {
-          left: calc(53o - 37px);
+          left: calc(53% - 37px);
           border-top: 83px solid #fff;
           border-right: 37px solid transparent;
           border-left: 37px solid transparent;
