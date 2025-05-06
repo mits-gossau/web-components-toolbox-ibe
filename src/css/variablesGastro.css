@@ -181,6 +181,7 @@
   --teaser-plain-border-radius-mobile-custom: 0.275em;
   --teaser-plain-figcaption-border-radius: 0;
   --teaser-plain-a-picture-margin-custom: 0 0 1em 0;
+  --teaser-plain-intersecting-figcaption-any-transform-custom: none; 
 
   /* Teaser - Overlay */
   --teaser-overlay-bg-color-custom: var(--m-white);
