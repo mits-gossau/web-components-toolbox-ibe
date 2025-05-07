@@ -34,7 +34,7 @@ export default class GastroEmotionPictures extends EmotionPictures {
       
       :host .spickel {
         position: absolute;
-        top: -1px;
+        top: var(--spickel-top-position, 15px);
       }
 
       @media screen and (max-width: 767px) {
@@ -43,7 +43,7 @@ export default class GastroEmotionPictures extends EmotionPictures {
           border-top: 27px solid #fff;
           border-right: 12px solid transparent;
           border-left: 12px solid transparent;
-          top: -6px;
+          top: var(--spickel-top-position-mobile, 0);
         }
       }
 
