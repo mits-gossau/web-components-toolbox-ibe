@@ -100,7 +100,8 @@
   --h6-font-size: 1em;
 
   /* Buttons */
-  --button-default-background-color-hover: var(--color-hover);
+  --button-default-background-color-hover: var(--color-gastro-custom-hover);
+  --button-primary-background-color-hover-custom: var(--color-gastro-custom-hover);
 
   /* Emotion Pictures with button */
   --emotion-pictures-with-button-bg-background-color-custom: var(--color-secondary);
@@ -194,6 +195,9 @@
   --teaser-tile-p-font-size-custom: 1em;
   --teaser-tile-p-line-height-custom: 1.5em;
   --teaser-tile-h2-margin-mobile: 0 0 0.5em 0;
+
+  /* Picture - Teaser */
+  --picture-teaser-img-max-height-custom: 100%;
   
   /* Wrapper */
   --wrapper-teaser-p-margin: 0;
