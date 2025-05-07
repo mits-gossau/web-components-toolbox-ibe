@@ -46,21 +46,24 @@ export default class Region extends Shadow() {
   renderCSS () {
     this.css = /* css */`
       :host {
-        align-self: center;
-        /*background: gray;*/
-        display: flex;
+        --any-a-display: flex;
+        --a-color: var(--color);
+        --a-color-hover: var(--color);
+        --a-text-decoration-hover: none;
         position: absolute;
         z-index: 9999;
         right: calc((100% - var(--header-default-content-width,var(--content-width, 55%))) / 2)
       }
 
-      :host > div {
-        display: flex;
+      :host a {
+        margin: 0 !important;
         align-items: center;
         gap: 0.25em;
+      }
+      
+      :host > div {
         font-size: .875rem;
         font-family: var(--font-family-bold, var(--font-family, inherit));
-        font-weight: 700 !important;
       }
 
       @media only screen and (max-width: _max-width_) {
@@ -103,14 +106,15 @@ export default class Region extends Shadow() {
   renderHTML () {
     this.html = /* html */`
       <div>
-        <div>
-          <img src="${this.importMetaUrl}../../../../img/location.svg" alt="location" width="24" height="24">
-        </div>
-        <div>
-          <div>Migros-Region</div>
-          <div>Ostschweiz</div>
-        </div>
-      </div>`
+        <a href="">
+          <div><img src="${this.importMetaUrl}../../../../img/location.svg" alt="location" width="24" height="24"></div>
+          <div>
+            <div>Migros-Region</div>
+            <div>Ostschweiz</div>
+          </div>
+        </a>
+      </div>
+    `
   }
 
   get div () {

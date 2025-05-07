@@ -153,6 +153,7 @@
   --header-default-margin-custom: 0;
   --header-default-content-width: var(--content-with-global);
   --header-default-border-bottom-custom: 1px solid var(--m-gray-500);
+  --header-default-align-items-custom: center;
 
   /* Navigation */
   --menu-background-color-custom: var(--m-white);
