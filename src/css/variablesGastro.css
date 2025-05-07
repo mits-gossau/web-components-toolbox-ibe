@@ -64,6 +64,7 @@
   --color-quarternary: #ECEAE6;
   --color-hover: var(--color-secondary);
   --color-disabled: #864142;
+  --color-gastro-custom-hover: #E03C00;
   
   /* Fonts */
   --font-family: HelveticaNowTextRegular, Helvetica, Arial, sans-serif;
@@ -175,7 +176,7 @@
   --navigation-gastro-a-link-content-spacing-no-scroll-custom: 0;
 
   /* Teaser - Plain */
-  --teaser-plain-background-color-hover-custom: var(--m-red-700);
+  --teaser-plain-background-color-hover-custom: var(--color-gastro-custom-hover);
   --teaser-plain-border-radius-custom: 0.25em;
   --teaser-plain-color-custom: var(--m-white);
   --teaser-plain-border-radius-mobile-custom: 0.275em;
@@ -186,6 +187,7 @@
 
   /* Teaser - Overlay */
   --teaser-overlay-bg-color-custom: var(--m-white);
+  --teaser-overlay-bg-background-color-hover-custom: var(--color-gastro-custom-hover);
 
   /* Teaser - Tile */
   --teaser-tile-h2-figcaption-color: var(--color-secondary);
