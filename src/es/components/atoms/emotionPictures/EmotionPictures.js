@@ -3,7 +3,7 @@ import EmotionPictures from '../../web-components-toolbox/src/es/components/atom
 
 export default class GastroEmotionPictures extends EmotionPictures {
   constructor (options = {}, ...args) {
-    super({ ...options }, ...args)
+    super({ importMetaUrl: import.meta.url, ...options }, ...args)
   }
 
   connectedCallback () {
@@ -34,7 +34,7 @@ export default class GastroEmotionPictures extends EmotionPictures {
       
       :host .spickel {
         position: absolute;
-        top: -1px;
+        top: var(--spickel-top-position, 15px);
       }
 
       @media screen and (max-width: 767px) {
@@ -43,7 +43,7 @@ export default class GastroEmotionPictures extends EmotionPictures {
           border-top: 27px solid #fff;
           border-right: 12px solid transparent;
           border-left: 12px solid transparent;
-          top: -6px;
+          top: var(--spickel-top-position-mobile, 0);
         }
       }
 
@@ -115,7 +115,7 @@ export default class GastroEmotionPictures extends EmotionPictures {
     switch (this.getAttribute('namespace')) {
       case 'emotion-pictures-corporate-':
         return this.fetchCSS({
-          path: '/src/es/components/atoms/emotionPictures/corporate-/corporate-.css',
+          path: `${this.importMetaUrl}./corporate-/corporate-.css`,
           namespace: false
         })
       default:
