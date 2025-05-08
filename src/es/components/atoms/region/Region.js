@@ -60,14 +60,16 @@ export default class Region extends Shadow() {
         align-items: center;
         gap: 0.25em;
       }
-      
+
       :host > div {
         font-size: .875rem;
         font-family: var(--font-family-bold, var(--font-family, inherit));
       }
 
       @media only screen and (max-width: _max-width_) {
-        :host {}
+        :host {
+          left: 20vw;
+        }
       }
     `
     return this.fetchTemplate()
