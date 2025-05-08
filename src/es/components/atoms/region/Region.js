@@ -106,11 +106,11 @@ export default class Region extends Shadow() {
   renderHTML () {
     this.html = /* html */`
       <div>
-        <a href="">
+        <a href="${this.link}">
           <div><img src="${this.importMetaUrl}../../../../img/location.svg" alt="location" width="24" height="24"></div>
           <div>
-            <div>Migros-Region</div>
-            <div>Ostschweiz</div>
+            <div>${this.title}</div>
+            <div>${this.region}</div>
           </div>
         </a>
       </div>
@@ -119,5 +119,17 @@ export default class Region extends Shadow() {
 
   get div () {
     return this.root.querySelector('div')
+  }
+
+  get title () {
+    return this.getAttribute('title') || ''
+  }
+
+  get region () {
+    return this.getAttribute('region') || ''
+  }
+
+  get link () {
+    return this.getAttribute('link') || ''
   }
 }
