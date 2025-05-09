@@ -125,6 +125,7 @@
   --emotion-pictures-corporate-padding-custom: 0 1.15rem;
   --emotion-pictures-corporate-padding-mobile-custom: 0 1.15rem;
   --emotion-pictures-corporate-img-max-height: 50vh;
+  --a-emotion-pictures-margin-top-first-child: 0;
 
   /* Footer */
   --footer-default-h4-color: var(--m-black);
