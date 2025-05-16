@@ -48,27 +48,40 @@ export default class Region extends Shadow() {
       :host {
         --any-a-display: flex;
         --a-color: var(--color);
-        --a-color-hover: var(--color);
         --a-text-decoration-hover: none;
         position: absolute;
         z-index: 9999;
         right: calc((100% - var(--header-default-content-width,var(--content-width, 55%))) / 2)
       }
 
-      :host a {
+      :host > div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      :host a.region-item {
+        display: flex;
         margin: 0 !important;
         align-items: center;
         gap: 0.25em;
-      }
-
-      :host > div {
         font-size: .875rem;
         font-family: var(--font-family-bold, var(--font-family, inherit));
+        transition: color 0.3s ease-out
+      }
+
+      :host a.region-header {
+        margin: 0 !important;
+        font-size: .85em;
+        margin-left:1.9em !important;
+        transition: color 0.3s ease-out
       }
 
       @media only screen and (max-width: _max-width_) {
         :host {
           left: 20vw;
+        }
+        :host a.region-header {
+          margin-left: 2em !important;
         }
       }
     `
@@ -108,8 +121,13 @@ export default class Region extends Shadow() {
   renderHTML () {
     this.html = /* html */`
       <div>
-        <a href="${this.link}">
-          <div><img src="${this.importMetaUrl}../../../../img/location.svg" alt="location" width="24" height="24"></div>
+        <div>
+          <a class="region-header" href="${this.metaLink}">${this.metaTitle}</a>
+        </div>
+        <a href="${this.link}" class="region-item">
+          <div>
+            <img src="${this.importMetaUrl}../../../../img/location.svg" alt="location" width="24" height="24">
+          </div>
           <div>
             <div>${this.title}</div>
             <div>${this.region}</div>
@@ -133,5 +151,13 @@ export default class Region extends Shadow() {
 
   get link () {
     return this.getAttribute('link') || ''
+  }
+
+  get metaLink () {
+    return this.getAttribute('meta-link') || ''
+  }
+
+  get metaTitle () {
+    return this.getAttribute('meta-title') || ''
   }
 }

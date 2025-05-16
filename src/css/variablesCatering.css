@@ -178,6 +178,9 @@
   --navigation-gastro-padding-mobile-first-child-custom: 0;
   --navigation-gastro-padding-mobile-custom: 0;
   --navigation-gastro-a-link-content-spacing-no-scroll-custom: 0;
+  --navigation-gastro-h2-font-size: 2.75em;
+  --navigation-gastro-h2-font-family: var(--font-family);
+  --navigation-gastro-h2-line-height: 1.75em;
 
   /* Teaser - Plain */
   --teaser-plain-background-color-hover-custom: var(--color-catering-custom-hover);
