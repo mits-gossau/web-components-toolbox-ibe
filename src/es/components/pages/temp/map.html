@@ -46,98 +46,192 @@
                 
                 
                 <!-- Input Search + Output Location/State -->
-                <div class="row ui-f607-12-forms ui-js-form ui-js-form-logic" style="margin: 1.32rem 0 1.5rem;">
-                    <div style="padding:0; width: 100%; max-width: 312px;" class="col-xs-12">
-                        <label for="ref-address" class="sr-only">PLZ oder Ort eingeben</label>
-                        <input 
-                            type="text" 
-                            aria-live="polite" 
-                            aria-controls="ui-autocomplete-ref-address" 
-                            class="form-control search-question js-association-search-input" 
-                            id="ref-address" 
-                            name="ref-address" 
-                            placeholder="PLZ oder Ort eingeben" 
-                            autocomplete="off"
-                        >
-                        <button class="button-reset" type="reset">
-                            <span class="sr-only">Zurücksetzen</span>
-                        </button>
-                        <button class="button-search" type="button">
-                            <span class="sr-only">Suchen</span>
-                        </button>
-                        <div class="ui-results-autocomplete ui-js-results-autocomplete" id="ui-autocomplete-ref-address">
-                            <div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999; width: 312px;">
-                                <div class="autocomplete-suggestion" data-index="0">1144 <strong>B</strong>allens</div>
+                <div class="ui-c204-12-map">
+                    <div class="row ui-f607-12-forms ui-js-form ui-js-form-logic" style="margin: 1.32rem 0 1.5rem;">
+                        <div class="form-group">
+                            <div class="search-container col-xs-12" style="padding:0; width: 100%; max-width: 312px;">
+                                <label for="ref-address" class="sr-only">PLZ oder Ort eingeben</label>
+                                <input 
+                                    type="text" 
+                                    aria-live="polite" 
+                                    aria-controls="ui-autocomplete-ref-address" 
+                                    class="form-control search-question js-association-search-input" 
+                                    id="ref-address" 
+                                    name="ref-address" 
+                                    placeholder="PLZ oder Ort eingeben" 
+                                    autocomplete="off"
+                                >
+                                <button class="button-reset" type="reset">
+                                    <span class="sr-only">Zurücksetzen</span>
+                                </button>
+                                <button class="button-search" type="button">
+                                    <span class="sr-only">Suchen</span>
+                                </button>
+                                <div class="ui-results-autocomplete ui-js-results-autocomplete" id="ui-autocomplete-ref-address">
+                                    <div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999; width: 312px;">
+                                        <div class="autocomplete-suggestion" data-index="0">1144 <strong>B</strong>allens</div>
+                                    </div>
+                                </div>
+                                <style>
+                                    input.search-question,
+                                    input.search-question:focus,
+                                    input.search-question:focus-visible {
+                                        width: 100%;
+                                        padding: 10px 90px 10px 15px;
+                                        font-size: 1.6rem;
+                                        line-height: 2.4rem;
+                                        font-family: "Helvetica Now Text";
+                                        font-weight: 400;
+                                        min-height: 48px;
+                                        background-color: rgba(0, 0, 0, 0);
+                                        box-shadow: none;
+                                        border: 2px #e7e5e3 solid;
+                                        border-radius: 4px;
+                                        text-overflow: ellipsis !important;
+                                        height: auto;
+                                        margin: 0;
+                                        position: relative;
+                                        display: inline-block;
+                                        color: #333;
+                                        transition: background-color .8s;
+                                        box-sizing: border-box;
+                                        -webkit-appearance: none !important;
+                                        -moz-appearance: none !important;
+                                        appearance: none !important;
+                                        outline: none;
+                                    }
+                                    button.button-reset {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 41px;
+                                        width: 42px;
+                                        height: 48px;
+                                        border: 0;
+                                        background-color: rgba(0,0,0,0);
+                                        background-image: url(./img/svg/icons/map/reset_circle_x.svg);
+                                        background-position: center center;
+                                        background-repeat: no-repeat;
+                                        background-size: 24px 24px;
+                                        opacity: 0;
+                                        outline: 0;
+                                        transition: opacity .3s ease-in-out,visibility 0s .3s;
+                                        visibility: hidden;
+                                    }
+                                    button.button-search {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 5px;
+                                        width: 42px;
+                                        height: 48px;
+                                        border: 0;
+                                        background-color: rgba(0,0,0,0);
+                                        background-image: url(./img/svg/icons/map/submit_search_arrow.svg);
+                                        background-position: center center;
+                                        background-repeat: no-repeat;
+                                        background-size: 16px 32px;
+                                        outline: 0;
+                                    }
+                                </style>
                             </div>
                         </div>
-                        <style>
-                            input.search-question,
-                            input.search-question:focus,
-                            input.search-question:focus-visible {
-                                width: 100%;
-                                padding: 10px 90px 10px 15px;
-                                font-size: 1.6rem;
-                                line-height: 2.4rem;
-                                font-family: "Helvetica Now Text";
-                                font-weight: 400;
-                                min-height: 48px;
-                                background-color: rgba(0, 0, 0, 0);
-                                box-shadow: none;
-                                border: 2px #e7e5e3 solid;
-                                border-radius: 4px;
-                                text-overflow: ellipsis !important;
-                                height: auto;
-                                margin: 0;
-                                position: relative;
-                                display: inline-block;
-                                color: #333;
-                                transition: background-color .8s;
-                                box-sizing: border-box;
-                                -webkit-appearance: none !important;
-                                -moz-appearance: none !important;
-                                appearance: none !important;
-                                outline: none;
-                            }
-                            button.button-reset {
-                                position: absolute;
-                                top: 0;
-                                right: 41px;
-                                width: 42px;
-                                height: 48px;
-                                border: 0;
-                                background-color: rgba(0,0,0,0);
-                                background-image: url(./img/svg/icons/map/reset_circle_x.svg);
-                                background-position: center center;
-                                background-repeat: no-repeat;
-                                background-size: 24px 24px;
-                                opacity: 0;
-                                outline: 0;
-                                transition: opacity .3s ease-in-out,visibility 0s .3s;
-                                visibility: hidden;
-                            }
-                            button.button-search {
-                                position: absolute;
-                                top: 0;
-                                right: 5px;
-                                width: 42px;
-                                height: 48px;
-                                border: 0;
-                                background-color: rgba(0,0,0,0);
-                                background-image: url(./img/svg/icons/map/submit_search_arrow.svg);
-                                background-position: center center;
-                                background-repeat: no-repeat;
-                                background-size: 16px 32px;
-                                outline: 0;
-                            }
-                        </style>
                     </div>
                 </div>
 
 
 
-                <script>
-                    // Autocomplete
-                    // endpoint 
+                <script defer="" type="text/javascript">
+                    // autocomplete functionality
+                    // endpoint for fetching locations
+                    let endpoint = "http://localhost:3001/locations"
+                    const inputField = document.querySelector("#ref-address")
+
+                    // authorization header
+                    const headers = new Headers()
+                    headers.append("Authorization", "Basic Z2FzdHJvOkc0JHRyMCE=")
+                    headers.append("Content-Type", "application/json")
+                    headers.append("Accept", "application/json")
+
+                    // request to fetch locations
+                    const fetchLocations = (query) => {
+                        const url = new URL(endpoint)
+                        url.searchParams.delete("zip")
+                        url.searchParams.delete("name")
+                        // check if query is a zip or a name
+                        !isNaN(query) ? url.searchParams.append("zip", query) : url.searchParams.append("name", query)
+                        endpoint = url.toString()
+                        console.log("Fetching locations from:", endpoint)
+                        
+                        return new Promise((resolve, reject) => {
+                            fetch(endpoint, {
+                                method: "GET",
+                                headers: headers
+                            })
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error("Network response was not ok")
+                                }
+                                return response.json()
+                            })
+                            .then(data => {
+                                resolve(data)
+                            })
+                            .catch(error => {
+                                reject(error)
+                            })
+                        })
+                    }
+
+                    // input field
+                    inputField.addEventListener("input", function() {
+                        const query = this.value
+                        if (query.length >= 3) {
+                            fetchLocations(query)
+                                .then(data => {
+                                    console.log("Locations fetched:", data)
+                                    const filteredData = data.filter(location => {
+                                        return location.localityName.toLowerCase().includes(query.toLowerCase()) ||
+                                            location.zip.toString().includes(query)
+                                    })
+                                    displaySuggestions(filteredData)
+                                })
+                                .catch(error => {
+                                    console.error("Error fetching locations:", error)
+                                })
+                        } else {
+                            clearSuggestions()
+                        }
+                    })
+
+                    // reset button
+                    const resetButton = document.querySelector(".button-reset")
+                    resetButton.addEventListener("click", function() {
+                        inputField.value = ""
+                        clearSuggestions()
+                    })
+
+                    // function to display suggestions
+                    const displaySuggestions = (locations) => {
+                        const suggestionsContainer = document.querySelector(".autocomplete-suggestions")
+                        suggestionsContainer.innerHTML = ""
+                        locations.forEach(location => {
+                            const suggestion = document.createElement("div")
+                            suggestion.classList.add("autocomplete-suggestion")
+                            suggestion.setAttribute("data-index", location.id)
+                            suggestion.innerHTML = `<strong>${location.zip}</strong> ${location.localityName}`
+                            suggestion.addEventListener("click", function() {
+                                inputField.value = this.textContent
+                                clearSuggestions()
+                            })
+                            suggestionsContainer.appendChild(suggestion)
+                        })
+                        suggestionsContainer.style.display = "block"
+                    }
+                    // function to clear suggestions
+                    const clearSuggestions = () => {
+                        const suggestionsContainer = document.querySelector(".autocomplete-suggestions")
+                        suggestionsContainer.innerHTML = ""
+                        suggestionsContainer.style.display = "none"
+                    }
                 </script>
 
 
