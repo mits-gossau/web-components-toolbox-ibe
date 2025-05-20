@@ -2214,6 +2214,15 @@ body.modal-open .mui-footer-affix {
     letter-spacing: -.25px
 }
 
+/* @media screen and (min-width: 1200px) {
+    .ui-paragraph-headline {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+        margin-bottom: 25px;
+        letter-spacing: -.5px;
+    }
+} */
+
 .ui-paragraph-headline.alt-colored {
     color: #333
 }
@@ -33878,7 +33887,7 @@ blockquote.alt-colored.quote .blockquote-footer::before {
     z-index: 1;
     display: inline-block;
     width: 100%;
-    max-width: 730px
+    /* max-width: 730px */
 }
 
 .ui-c204-12-map .map object {
