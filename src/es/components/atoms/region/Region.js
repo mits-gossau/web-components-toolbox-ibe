@@ -142,7 +142,11 @@ export default class Region extends Shadow() {
   }
 
   get title () {
-    return this.getAttribute('title') || ''
+    const title = this.getAttribute('title') || ''
+    const index = title.indexOf(' ')
+    if (index > 0) {
+      return title.slice(0, index + 1) + '<br>' + title.slice(index + 1)
+    }
   }
 
   get region () {
