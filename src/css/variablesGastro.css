@@ -156,6 +156,7 @@
   --header-default-border-bottom-custom: 1px solid var(--m-gray-500);
   --header-default-align-items-custom: center;
   --header-default-a-menu-icon-padding-top-custom: 0.7em;
+  --header-default-width: 110%;
 
   /* Navigation */
   --menu-background-color-custom: var(--m-white);
