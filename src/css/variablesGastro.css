@@ -144,6 +144,7 @@
   --footer-default-invert-orange-a-color-hover-custom: var(--m-white);
   --footer-default-footer-any-padding-mobile: 0 0 0.5em 0;
   --footer-default-wrapper-last-contains-details-margin-top:0;
+  --footer-default-p-margin: 0;
 
   /* Header */
   --header-default-a-logo-top-custom: calc(70px / 2 - 140px / 2);
