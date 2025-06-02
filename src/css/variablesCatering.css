@@ -24,7 +24,7 @@
   font-weight: 400;
   font-stretch: normal;
   font-display: swap;
-}
+} 
 
 @font-face {
   font-family: "HelveticaNowDisplayXBoldItalic";
@@ -53,8 +53,6 @@
   font-display: swap;
 }
 
-
-
 :root {
 
   /* Main Colors */
@@ -71,7 +69,8 @@
   --font-family-bold: HelveticaNowTextBold, Helvetica, Arial, sans-serif;
   --font-size-mobile: min(15px, 5vw);
   --p-line-height: 1.75rem;
-  --p-margin: 0;
+  --p-margin: var(--content-spacing, 0) 0;
+  --p-margin-mobile: var(--content-spacing-mobile, 0) 0;
   
   /* Global */
   --any-content-width: var(--content-with-global);
@@ -143,6 +142,7 @@
   --footer-default-invert-orange-a-color-hover-custom: var(--m-white);
   --footer-default-footer-any-padding-mobile: 0 0 0.5em 0;
   --footer-default-wrapper-last-contains-details-margin-top:0;
+  --footer-default-p-margin: 0;
 
   /* Header */
   --header-default-a-logo-top-custom: calc(70px / 2 - 140px / 2);
@@ -201,7 +201,7 @@
   /* Teaser - Tile */
   --teaser-tile-h2-figcaption-color: var(--color-secondary);
   --teaser-tile-p-font-size-custom: 1em;
-  --teaser-tile-p-line-height-custom: 1.5em;
+  --teaser-tile-p-line-height-custom: 1.75em;
   --teaser-tile-h2-margin-mobile: 0 0 0.5em 0;
 
   /* Picture - Teaser */
