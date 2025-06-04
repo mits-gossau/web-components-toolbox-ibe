@@ -273,9 +273,10 @@
                 const displayPopover = (coop, query = undefined) => {
                     let gm = coop.short || coop.cooperative
                     if (gm.startsWith("gm")) gm = gm.substring(2)
-                    let gmZip = query || coop.zip 
+                    let gmZip = coop.zip
+                    if(/^\d{4}$/.test(query)) gmZip = query
                     let gmLabel = coop.label
-                    
+
                     const cooperativesJSON = fetch("./assets/cooperatives.json")
                         cooperativesJSON
                             .then(response => response.json())
@@ -283,17 +284,21 @@
                                 const coop = items.find(item => item.short === gm)
                                 if (coop) {
                                     gmLabel = coop.label
-
                                     const cooperativeInput = document.querySelector("#cooperative-input")
                                     cooperativeInput.classList.add("is-hidden")
                                     const cooperativeDisplay = document.querySelector("#cooperative-display")
                                     cooperativeDisplay.classList.remove("is-hidden")
+                                    const plzButton = cooperativeDisplay.querySelector(".ui-output-plz")
                                     const plzElement = cooperativeDisplay.querySelector(".ui-js-output-plz")
-                                    plzElement.textContent = gmZip
+                                    if (gmZip === undefined || gmZip === "") {
+                                        gmZip = gmLabel.replace("Migros ", "")
+                                        plzButton.textContent = gmZip
+                                    } else {
+                                        plzElement.textContent = gmZip
+                                    }
                                     const stateElement = cooperativeDisplay.querySelector(".ui-js-output-state")
                                     stateElement.textContent = gmLabel
                                     stateElement.setAttribute("href", `/de/genossenschaften/${coop.slag}.html`)
-
                                     const marker = document.querySelector(`.map-marker[data-map-area="${gm}"]`)
                                     if (typeof $(marker).popover === "function") {
                                         try {
