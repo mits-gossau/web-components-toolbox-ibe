@@ -218,11 +218,6 @@
       selector: 'gastro-m-',
       url: 'molecules/',
       separateFolder: true
-    },
-    {
-      selector: 'gastro-o-',
-      url: 'organisms/',
-      separateFolder: true
     }
   ] // directories
   // ↑↑↑ adjustable ↑↑↑
