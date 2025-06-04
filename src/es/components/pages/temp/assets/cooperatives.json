@@ -1,0 +1,53 @@
+[
+  {
+    "label": "Migros Basel",
+    "short": "bs",
+    "slag": "basel"
+  },
+  {
+    "label": "Migros Aare",
+    "short": "aa",
+    "slag": "aare"
+  },
+  {
+    "label": "Migros Genf",
+    "short": "ge",
+    "slag": "genf"
+  },
+  {
+    "label": "Migros Luzern",
+    "short": "lu",
+    "slag": "luzern"
+  },
+  {
+    "label": "Migros Neuenburg-Freiburg",
+    "short": "nf",
+    "slag": "neuenburg-freiburg"
+  },
+  {
+    "label": "Migros Ostschweiz",
+    "short": "os",
+    "slag": "ostschweiz"
+  },
+  {
+    "label": "Migros Tessin",
+    "short": "ti",
+    "slag": "tessin"
+  },
+  {
+    "label": "Migros Waadt",
+    "short": "vd",
+    "slag": "waadt"
+  },
+  {
+    
+    "label": "Migros Wallis",
+    "short": "vs",
+    "slag": "wallis"
+  },
+  {
+    "label": "Migros Zürich",
+    "short": "zh",
+    "slag": "zuerich"
+  }
+]
