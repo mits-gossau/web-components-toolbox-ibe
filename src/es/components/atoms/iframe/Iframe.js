@@ -94,7 +94,6 @@ export default class Iframe extends Intersection() {
               ) || ''
         }
         width: 100%;
-        height: auto;
         ${
           this.hasAttribute('background-color')
             ? `background-color: ${this.getAttribute('background-color')};`
