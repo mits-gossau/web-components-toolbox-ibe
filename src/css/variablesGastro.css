@@ -71,8 +71,8 @@
   --font-family-bold: HelveticaNowTextBold, Helvetica, Arial, sans-serif;
   --font-size-mobile: min(15px, 5vw);
   --p-line-height: 1.75rem;
-  --p-margin:var(--content-spacing, 0) 0;
-  --p-margin-mobile: var(--content-spacing-mobile, 0) 0;
+  --p-margin: 0 0 var(--content-spacing, 0) 0;
+  --p-margin-mobile: 0 0 var(--content-spacing-mobile, 0) 0;
   
   /* Global */
   --any-content-width: var(--content-with-global);
