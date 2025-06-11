@@ -32059,11 +32059,11 @@ blockquote.quote .blockquote-footer::before {
         content: ""
     }
 
-    .ui-c204-12-map .image-animation .map.is-touched::before {
+    /* .ui-c204-12-map .image-animation .map.is-touched::before {
         opacity: 0;
         transition: opacity .3s ease-in-out,visibility 0s .3s;
         visibility: hidden
-    }
+    } */
 
     .ui-c204-12-map .image-animation .map.is-touched::after {
         display: none
