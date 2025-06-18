@@ -70,18 +70,18 @@ export default class Region extends Shadow() {
       }
 
       :host a.region-header {
+        display: flex;
         margin: 0 !important;
+        align-items: center;
+        gap: 0.25em;
         font-size: .85em;
-        margin-left:1.9em !important;
+        font-family: var(--font-family, inherit);
         transition: color 0.3s ease-out
       }
 
       @media only screen and (max-width: _max-width_) {
         :host {
           left: 20vw;
-        }
-        :host a.region-header {
-          margin-left: 2em !important;
         }
       }
     `
@@ -121,9 +121,10 @@ export default class Region extends Shadow() {
   renderHTML () {
     this.html = /* html */`
       <div>
-        <div>
-          <a class="region-header" href="${this.metaLink}">${this.metaTitle}</a>
-        </div>
+        <a class="region-header" href="${this.metaLink}">
+            <div><img src="${this.importMetaUrl}../../../../img/compass.svg" alt="compass" width="24" height="24"></div>
+            <div>${this.metaTitle}</div>
+        </a>
         <a href="${this.link}" class="region-item">
           <div>
             <img src="${this.importMetaUrl}../../../../img/location.svg" alt="location" width="24" height="24">
