@@ -158,8 +158,7 @@
   --header-default-border-bottom-custom: 1px solid var(--m-gray-500);
   --header-default-align-items-custom: center;
   --header-default-a-menu-icon-padding-top-custom: 0.7em;
-  --header-default-width: 110%;
-  --logo-default-img-margin-mobile: 10vw;
+  --header-default-width: 100%;
 
   
   /* Navigation */
