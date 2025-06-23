@@ -32019,7 +32019,8 @@ blockquote.quote .blockquote-footer::before {
     }
 
     .ui-c204-12-map .image-animation .img-responsive {
-        width: auto;
+        /* width: auto; */
+        width: 150vw;
         max-width: none;
         height: 100%
     }
