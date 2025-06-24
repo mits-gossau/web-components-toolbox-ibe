@@ -212,7 +212,11 @@
 
   /* Wrapper */
   --wrapper-teaser-p-margin: 0;
-  
+
+
+  /* Carousel */
+--carousel-two-default-section-child-a-picture-margin: auto auto 1rem;
+
   /* Details (Footer) */
   --details-default-icon-right-summary-border-bottom-open-custom: 1px solid var(--m-gray-500);
   --details-default-icon-right-border-color-custom: var(--m-gray-500) !important;
