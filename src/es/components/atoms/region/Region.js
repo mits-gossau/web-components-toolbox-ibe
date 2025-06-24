@@ -119,12 +119,17 @@ export default class Region extends Shadow() {
    * @returns Promise<void>
    */
   renderHTML () {
-    this.html = /* html */`
-      <div>
+    const regionHTML = this.hideRegionFlag
+      ? ''
+      : /* html */ `
         <a class="region-header" href="${this.metaLink}">
             <div><img src="${this.importMetaUrl}../../../../img/compass.svg" alt="compass" width="24" height="24"></div>
             <div>${this.metaTitle}</div>
         </a>
+      `
+    this.html = /* html */`
+      <div>
+        ${regionHTML}
         <a href="${this.link}" class="region-item">
           <div>
             <img src="${this.importMetaUrl}../../../../img/location.svg" alt="location" width="24" height="24">
@@ -164,5 +169,9 @@ export default class Region extends Shadow() {
 
   get metaTitle () {
     return this.getAttribute('meta-title') || ''
+  }
+
+  get hideRegionFlag () {
+    return this.hasAttribute('hide-region')
   }
 }
