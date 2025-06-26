@@ -127,18 +127,18 @@ export default class Region extends Shadow() {
             <div>${this.metaTitle}</div>
         </a>
       `
+
+    const titleHTML = this.title
+      ? /* html */ `<a href="${this.link}" class="region-item">
+          <div><img src="${this.importMetaUrl}../../../../img/location.svg" alt="location" width="24" height="24"></div>
+          <div><div>${this.title}</div><div>${this.region}</div></div>
+        </a>
+      `
+      : ''
     this.html = /* html */`
       <div>
         ${regionHTML}
-        <a href="${this.link}" class="region-item">
-          <div>
-            <img src="${this.importMetaUrl}../../../../img/location.svg" alt="location" width="24" height="24">
-          </div>
-          <div>
-            <div>${this.title}</div>
-            <div>${this.region}</div>
-          </div>
-        </a>
+        ${titleHTML}
       </div>
     `
   }
