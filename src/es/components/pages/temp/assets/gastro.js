@@ -32,7 +32,7 @@ const fetchLocations = (query) => {
 
 // valid ZIP (max 4 digits) or location name (min 2 chars, not all digits)
 const isValidQuery = (query) => {
-    return (/^\d{1,4}$/.test(query) && query.length <= 4) || (query.length > 1 && /\D/.test(query));
+    return (query.length > 3 && /^\d{1,4}$/.test(query) && query.length <= 4) || (query.length > 1 && /\D/.test(query));
 }
 
 const inputField = document.querySelector("#ref-address")
