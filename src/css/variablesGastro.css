@@ -104,6 +104,9 @@
   --button-default-background-color-hover: var(--color-gastro-custom-hover);
   --button-primary-background-color-hover-custom: var(--color-gastro-custom-hover);
 
+  /* Emotion Pictures */
+  --emotion-carousel-default-any-margin-top-first-child-custom: 0;
+
   /* Emotion Pictures with button */
   --emotion-pictures-with-button-bg-background-color-custom: var(--color-secondary);
   --emotion-pictures-with-button-bg-color-custom: var(--m-white);
