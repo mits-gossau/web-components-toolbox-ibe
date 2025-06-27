@@ -100,6 +100,8 @@ searchButton.addEventListener("click", function () {
 resetButton.addEventListener("click", function () {
     inputField.value = ""
     clearSuggestions()
+    resetButton.style.visibility = "hidden"
+    resetButton.style.opacity = "0"
 })
 
 const getCooperative = (result, query) => {
