@@ -36,6 +36,7 @@ const isValidQuery = (query) => {
 }
 
 const inputField = document.querySelector("#ref-address")
+const resetButton = document.querySelector(".button-reset")
 const errorMessage = document.createElement("div")
 errorMessage.className = "input-error-message"
 errorMessage.style.color = "red"
@@ -55,6 +56,13 @@ const hideError = () => {
 inputField.addEventListener("input", function () {
     let query = this.value.trim()
     hideError()
+    if (query.length > 0) {
+        resetButton.style.visibility = "visible"
+        resetButton.style.opacity = "1"
+    } else {
+        resetButton.style.visibility = "hidden"
+        resetButton.style.opacity = "0"
+    }
     if (/^\d+$/.test(query) && query.length > 4) {
         query = query.slice(0, 4)
         this.value = query // update input field visually
@@ -89,12 +97,10 @@ searchButton.addEventListener("click", function () {
     }
 })
 
-const resetButton = document.querySelector(".button-reset")
 resetButton.addEventListener("click", function () {
     inputField.value = ""
     clearSuggestions()
 })
-
 
 const getCooperative = (result, query) => {
     let gm = ''
