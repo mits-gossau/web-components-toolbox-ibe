@@ -36,8 +36,25 @@ const isValidQuery = (query) => {
 }
 
 const inputField = document.querySelector("#ref-address")
+const errorMessage = document.createElement("div")
+errorMessage.className = "input-error-message"
+errorMessage.style.color = "red"
+errorMessage.style.marginTop = "4px"
+inputField.parentNode.insertBefore(errorMessage, inputField.nextSibling)
+
+const showError = (msg) => {
+    const customMsg = inputField.getAttribute("error-message") || "Please enter a valid zip code."
+    errorMessage.textContent = msg || customMsg
+    errorMessage.style.display = "block"
+}
+const hideError = () => {
+    errorMessage.textContent = ""
+    errorMessage.style.display = "none"
+}
+
 inputField.addEventListener("input", function () {
     let query = this.value.trim()
+    hideError()
     if (/^\d+$/.test(query) && query.length > 4) {
         query = query.slice(0, 4)
         this.value = query // update input field visually
@@ -45,21 +62,30 @@ inputField.addEventListener("input", function () {
     if (isValidQuery(query)) {
         fetchLocations(query)
             .then(data => getCooperative(data.result, query))
-            .catch(error => console.error("Error fetching locations:", error))
+            .catch(error => {
+                showError("Bitte gib eine gültige PLZ ein.")
+                clearSuggestions()
+            })
     } else {
         clearSuggestions()
+        hideError()
     }
 })
 
 const searchButton = document.querySelector(".button-search")
 searchButton.addEventListener("click", function () {
-    const query = inputField.value
+    let query = inputField.value.trim()
+    hideError()
     if (isValidQuery(query)) {
         fetchLocations(query)
             .then(data => getCooperative(data.result, query))
-            .catch(error => console.error("Error fetching locations:", error))
+            .catch(error => {
+                showError("Bitte gib eine gültige PLZ ein.")
+                clearSuggestions()
+            })
     } else {
         clearSuggestions()
+        hideError()
     }
 })
 
