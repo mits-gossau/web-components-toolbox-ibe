@@ -45,57 +45,70 @@ inputField.parentNode.insertBefore(errorMessage, inputField.nextSibling)
 
 // translations.json laden und anwenden
 fetch('../assets/translations.json')
-  .then(res => res.json())
-  .then(translations => {
-    t = translations[lang] || translations['de']
+    .then(res => res.json())
+    .then(translations => {
+        t = translations[lang] || translations['de']
 
-    // Headline
-    document.title = t.headline
-    const headline = document.querySelector('.ui-paragraph-headline')
-    if (headline) headline.textContent = t.headline
+        // Headline
+        document.title = t.headline
+        const headline = document.querySelector('.ui-paragraph-headline')
+        if (headline) headline.textContent = t.headline
 
-    // Intro
-    const intro = document.querySelector('.map-intro')
-    if (intro) intro.textContent = t.intro
+        // Intro
+        const intro = document.querySelector('.map-intro')
+        if (intro) intro.textContent = t.intro
 
-    // Input Label & Placeholder
-    const input = document.getElementById('ref-address')
-    if (input) {
-      input.setAttribute('placeholder', t.input_placeholder)
-      input.setAttribute('error-message', t.input_error)
-    }
-    const label = document.querySelector('label[for="ref-address"]')
-    if (label) label.textContent = t.input_label
-
-    // Buttons
-    const resetBtn = document.querySelector('.button-reset .sr-only')
-    if (resetBtn) resetBtn.textContent = t.reset_button
-    const searchBtn = document.querySelector('.button-search .sr-only')
-    if (searchBtn) searchBtn.textContent = t.search_button
-
-    // Output
-    const locationLabel = document.querySelector('.ui-output-search-item')
-    if (locationLabel) locationLabel.childNodes[0].textContent = t.your_location
-
-    const coopLabel = document.querySelectorAll('.ui-output-search-item')[1]
-    if (coopLabel) coopLabel.childNodes[0].textContent = t.your_cooperative
-
-    // Popover
-    const mapMarkers = document.querySelectorAll('.map-marker')
-    mapMarkers.forEach(marker => {
-        const area = marker.getAttribute("data-map-area")
-        if (area && t.popover[area]) {
-            const popoverContent = /*html*/`
-                <h2 class="title">${t.popover[area].title}</h2>
-                <span class="text"><span>${t.popover[area].desc}</span></span>
-                <div class="link-wrapper">
-                    <a target="_parent" href="${marker.getAttribute("data-area-url")}" class="link">${t.to_cooperative}</a>
-                </div>
-            `
-            marker.setAttribute('data-content', popoverContent)
+        // Input Label & Placeholder
+        const input = document.getElementById('ref-address')
+        if (input) {
+            input.setAttribute('placeholder', t.input_placeholder)
+            input.setAttribute('error-message', t.input_error)
         }
+        const label = document.querySelector('label[for="ref-address"]')
+        if (label) label.textContent = t.input_label
+
+        // Buttons
+        const resetBtn = document.querySelector('.button-reset .sr-only')
+        if (resetBtn) resetBtn.textContent = t.reset_button
+        const searchBtn = document.querySelector('.button-search .sr-only')
+        if (searchBtn) searchBtn.textContent = t.search_button
+
+        // Output
+        const locationLabel = document.querySelector('.ui-output-search-item')
+        if (locationLabel) locationLabel.childNodes[0].textContent = t.your_location
+
+        const coopLabel = document.querySelectorAll('.ui-output-search-item')[1]
+        if (coopLabel) coopLabel.childNodes[0].textContent = t.your_cooperative
+
+        // Popover
+        const mapMarkers = document.querySelectorAll('.map-marker')
+        fetch('../assets/cooperatives.json')
+            .then(res => res.json())
+            .then(cooperatives => {
+                mapMarkers.forEach(marker => {
+                    const area = marker.getAttribute("data-map-area")
+                    if (area && t.popover[area]) {
+                        // Finde das passende Cooperative-Objekt anhand short === area
+                        const coop = cooperatives.find(c => c.short === area)
+                        let url = ""
+                        if (coop && coop.slug && coop.slug[subdomain]) {
+                            url = coop.slug[subdomain][lang]
+                                ? `/${coop.slug[subdomain][lang]}`
+                                : `/${coop.slug[subdomain].de}`
+                        }
+                        const popoverContent = /*html*/`
+                            <h2 class="title">${t.popover[area].title}</h2>
+                            <span class="text"><span>${t.popover[area].desc}</span></span>
+                            <div class="link-wrapper">
+                                <a target="_parent" href="${url}" class="link">${t.to_cooperative}</a>
+                            </div>
+                        `
+                        marker.setAttribute('data-content', popoverContent)
+                        marker.setAttribute('data-area-url', url)
+                    }
+                })
+            })
     })
-  })
 
 const showError = (msg) => {
     const customMsg = inputField.getAttribute("error-message") || "Please enter a valid zip code."
@@ -247,6 +260,7 @@ const displayPopover = (coop, query = undefined) => {
                 }
                 const stateElement = cooperativeDisplay.querySelector(".ui-js-output-state")
                 const url = (lang === 'de' || !lang) ? `/${coop.slug[subdomain].de}` : `/${coop.slug[subdomain][lang]}`
+                console.log("URL:", url)
                 stateElement.textContent = gmLabel
                 stateElement.setAttribute("href", url)
 
@@ -259,7 +273,7 @@ const displayPopover = (coop, query = undefined) => {
                 `
 
                 const marker = document.querySelector(`.map-marker[data-map-area="${gm}"]`)
-                if (marker) { 
+                if (marker) {
                     marker.setAttribute("data-area-url", url)
                     let dataContent = marker.getAttribute("data-content")
                     if (dataContent) {
