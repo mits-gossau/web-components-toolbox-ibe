@@ -257,11 +257,11 @@ const displayPopover = (coop, query = undefined) => {
                     if (plzElement) plzElement.textContent = gmZip
                 }
                 const stateElement = cooperativeDisplay.querySelector(".ui-js-output-state")
-                const url = (lang === 'de' || !lang) ? `/${coop.slug[subdomain].de}` : `/${coop.slug[subdomain][lang]}`
-                console.log("URL:", url)
+                let slugValue = (lang === 'de' || !lang) ? coop.slug[subdomain].de : coop.slug[subdomain][lang]
+                let url = ''
+                if (slugValue) url = slugValue.startsWith("https://") ? slugValue : `/${slugValue}`
                 stateElement.textContent = gmLabel
                 stateElement.setAttribute("href", url)
-
                 const popoverContent = /*html*/`
                     <h2 class="title">${t.popover[coop.short].title}</h2>
                     <span class="text"><span>${t.popover[coop.short].desc}</span></span>
@@ -269,15 +269,11 @@ const displayPopover = (coop, query = undefined) => {
                         <a target="_parent" href="${url}" class="link">${t.to_cooperative}</a>
                     </div>
                 `
-
                 const marker = document.querySelector(`.map-marker[data-map-area="${gm}"]`)
                 if (marker) {
                     marker.setAttribute("data-area-url", url)
                     let dataContent = marker.getAttribute("data-content")
                     if (dataContent) {
-                        console.log(dataContent)
-                        // dataContent = dataContent.replace(/href="([^&]*)"/, `href="${url}"`)
-                        // marker.setAttribute("data-content", dataContent)
                         marker.setAttribute('data-content', popoverContent)
                     }
                 }
