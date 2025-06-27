@@ -63,7 +63,7 @@ inputField.addEventListener("input", function () {
         fetchLocations(query)
             .then(data => getCooperative(data.result, query))
             .catch(error => {
-                showError("Bitte gib eine gültige PLZ ein.")
+                showError()
                 clearSuggestions()
             })
     } else {
@@ -80,7 +80,7 @@ searchButton.addEventListener("click", function () {
         fetchLocations(query)
             .then(data => getCooperative(data.result, query))
             .catch(error => {
-                showError("Bitte gib eine gültige PLZ ein.")
+                showError()
                 clearSuggestions()
             })
     } else {
