@@ -214,8 +214,7 @@
   --picture-teaser-img-max-height-custom: 100%;
 
   /* Wrapper */
-  --wrapper-teaser-p-margin: 0;
-
+  --wrapper-teaser-p-margin: 0 0 var(--content-spacing, 0) 0;
 
   /* Carousel */
 --carousel-two-default-section-child-a-picture-margin: auto auto 1rem;

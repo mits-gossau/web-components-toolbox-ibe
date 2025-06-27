@@ -213,7 +213,7 @@
   --picture-teaser-img-max-height-custom: 100%;
   
   /* Wrapper */
-  --wrapper-teaser-p-margin: 0;
+  --wrapper-teaser-p-margin: 0 0 var(--content-spacing, 0) 0;
 
 
    /* Carousel */
