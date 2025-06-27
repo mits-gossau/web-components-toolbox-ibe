@@ -2,52 +2,181 @@
   {
     "label": "Migros Basel",
     "short": "bs",
-    "slag": "basel"
+    "slug": {
+      "gastro": {
+        "de": "gastro-test-url-basel",
+        "en": "genossenschaft-migros-basel",
+        "fr": "fr/migros-basel",
+        "it": "it/migros-basel"
+      },
+      "catering": {
+        "de": "catering-test-url-basel",
+        "en": "genossenschaft-migros-basel",
+        "fr": "fr/migros-basel",
+        "it": "it/migros-basel"
+      }
+    }
   },
   {
     "label": "Migros Aare",
     "short": "aa",
-    "slag": "aare"
+    "slug": {
+      "gastro": {
+        "de": "genossenschaft-migros-aare",
+        "en": "genossenschaft-migros-aare",
+        "fr": "fr/migros-aare",
+        "it": "it/migros-aare"
+      },
+      "catering": {
+        "de": "genossenschaft-migros-aare",
+        "en": "genossenschaft-migros-aare",
+        "fr": "fr/migros-aare",
+        "it": "it/migros-aare"
+      }
+    }
   },
   {
     "label": "Migros Genf",
     "short": "ge",
-    "slag": "genf"
+    "slug": {
+      "gastro": {
+        "de": "genossenschaft-migros-genf",
+        "en": "genossenschaft-migros-genf",
+        "fr": "fr/migros-geneve",
+        "it": "it/migros-geneve"
+      },
+      "catering": {
+        "de": "genossenschaft-migros-genf",
+        "en": "genossenschaft-migros-genf",
+        "fr": "fr/migros-geneve",
+        "it": "it/migros-geneve"
+      }
+    }
   },
   {
     "label": "Migros Luzern",
     "short": "lu",
-    "slag": "luzern"
+    "slug": {
+      "gastro": {
+        "de": "genossenschaft-migros-luzern",
+        "en": "genossenschaft-migros-luzern",
+        "fr": "fr/migros-lucerne",
+        "it": "it/migros-lucerne"
+      },
+      "catering": {
+        "de": "genossenschaft-migros-luzern",
+        "en": "genossenschaft-migros-luzern",
+        "fr": "fr/migros-lucerne",
+        "it": "it/migros-lucerne"
+      }
+    }
   },
   {
     "label": "Migros Neuenburg-Freiburg",
     "short": "nf",
-    "slag": "neuenburg-freiburg"
+    "slug": {
+      "gastro": {
+        "de": "genossenschaft-migros-freiburg",
+        "en": "genossenschaft-migros-freiburg",
+        "fr": "fr/migros-neuchatel-fribourg",
+        "it": "it/migros-neuchatel-fribourg"
+      },
+      "catering": {
+        "de": "genossenschaft-migros-freiburg",
+        "en": "genossenschaft-migros-freiburg",
+        "fr": "fr/migros-neuchatel-fribourg",
+        "it": "it/migros-neuchatel-fribourg"
+      }
+    }
   },
   {
     "label": "Migros Ostschweiz",
     "short": "os",
-    "slag": "ostschweiz"
+    "slug": {
+      "gastro": {
+        "de": "genossenschaft-migros-ostschweiz",
+        "en": "genossenschaft-migros-ostschweiz",
+        "fr": "fr/migros-ostschweiz",
+        "it": "it/migros-ostschweiz"
+      },
+      "catering": {
+        "de": "genossenschaft-migros-ostschweiz",
+        "en": "genossenschaft-migros-ostschweiz",
+        "fr": "fr/migros-ostschweiz",
+        "it": "it/migros-ostschweiz"
+      }
+    }
   },
   {
     "label": "Migros Tessin",
     "short": "ti",
-    "slag": "tessin"
+    "slug": {
+      "gastro": {
+        "de": "genossenschaft-migros-tessin",
+        "en": "genossenschaft-migros-tessin",
+        "fr": "fr/migros-tessin",
+        "it": "it/migros-ticino"
+      },
+      "catering": {
+        "de": "genossenschaft-migros-tessin",
+        "en": "genossenschaft-migros-tessin",
+        "fr": "fr/migros-tessin",
+        "it": "it/migros-ticino"
+      }
+    }
   },
   {
     "label": "Migros Waadt",
     "short": "vd",
-    "slag": "waadt"
+    "slug": {
+      "gastro": {
+        "de": "genossenschaft-migros-waadt",
+        "en": "genossenschaft-migros-waadt",
+        "fr": "fr/migros-vaud",
+        "it": "it/migros-vaud"
+      },
+      "catering": {
+        "de": "genossenschaft-migros-waadt",
+        "en": "genossenschaft-migros-waadt",
+        "fr": "fr/migros-vaud",
+        "it": "it/migros-vaud"
+      }
+    }
   },
   {
-    
     "label": "Migros Wallis",
     "short": "vs",
-    "slag": "wallis"
+    "slug": {
+      "gastro": {
+        "de": "genossenschaft-migros-wallis",
+        "en": "genossenschaft-migros-wallis",
+        "fr": "fr/migros-valais",
+        "it": "it/migros-valais"
+      },
+      "catering": {
+        "de": "genossenschaft-migros-wallis",
+        "en": "genossenschaft-migros-wallis",
+        "fr": "fr/migros-valais",
+        "it": "it/migros-valais"
+      }
+    }
   },
   {
     "label": "Migros Zürich",
     "short": "zh",
-    "slag": "zuerich"
+    "slug": {
+      "gastro": {
+        "de": "genossenschaft-migros-zurich",
+        "en": "genossenschaft-migros-zurich",
+        "fr": "fr/migros-zurich",
+        "it": "it/migros-zurich"
+      },
+      "catering": {
+        "de": "genossenschaft-migros-zurich",
+        "en": "genossenschaft-migros-zurich",
+        "fr": "fr/migros-zurich",
+        "it": "it/migros-zurich"
+      }
+    }
   }
 ]

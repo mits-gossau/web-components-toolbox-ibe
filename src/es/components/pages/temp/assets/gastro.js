@@ -168,6 +168,8 @@ const displayPopover = (coop, query = undefined) => {
     cooperativesJSON
         .then(response => response.json())
         .then(items => {
+            const lang = inputField.getAttribute("lang") || "de"
+            const subdomain = inputField.getAttribute("subdomain") || "gastro"
             const coop = items.find(item => item.short === gm)
             if (coop) {
                 gmLabel = coop.label
@@ -184,9 +186,19 @@ const displayPopover = (coop, query = undefined) => {
                     if (plzElement) plzElement.textContent = gmZip
                 }
                 const stateElement = cooperativeDisplay.querySelector(".ui-js-output-state")
+                const url = (lang === 'de' || !lang) ? `/${coop.slug[subdomain].de}` : `/${coop.slug[subdomain][lang]}`
                 stateElement.textContent = gmLabel
-                stateElement.setAttribute("href", `/de/genossenschaften/${coop.slag}.html`)
+                stateElement.setAttribute("href", url)
                 const marker = document.querySelector(`.map-marker[data-map-area="${gm}"]`)
+                if (marker) { 
+                    marker.setAttribute("data-area-url", url)
+                    let dataContent = marker.getAttribute("data-content")
+                    if (dataContent) {
+                        console.log(dataContent)
+                        dataContent = dataContent.replace(/href="([^&]*)"/, `href="${url}"`)
+                        marker.setAttribute("data-content", dataContent)
+                    }
+                }
                 if (typeof $(marker).popover === "function") {
                     try {
                         $(marker).popover({ trigger: 'manual' })
