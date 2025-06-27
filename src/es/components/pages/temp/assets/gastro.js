@@ -88,13 +88,11 @@ fetch('../assets/translations.json')
                 mapMarkers.forEach(marker => {
                     const area = marker.getAttribute("data-map-area")
                     if (area && t.popover[area]) {
-                        // Finde das passende Cooperative-Objekt anhand short === area
                         const coop = cooperatives.find(c => c.short === area)
-                        let url = ""
+                        let url = ''
                         if (coop && coop.slug && coop.slug[subdomain]) {
-                            url = coop.slug[subdomain][lang]
-                                ? `/${coop.slug[subdomain][lang]}`
-                                : `/${coop.slug[subdomain].de}`
+                            let slugValue = coop.slug[subdomain][lang] || coop.slug[subdomain].de
+                            if (slugValue) url = slugValue.startsWith("https://") ? slugValue : `/${slugValue}`
                         }
                         const popoverContent = /*html*/`
                             <h2 class="title">${t.popover[area].title}</h2>
