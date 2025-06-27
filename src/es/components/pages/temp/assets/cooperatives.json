@@ -10,7 +10,7 @@
         "it": "it/migros-basel"
       },
       "catering": {
-        "de": "catering-test-url-basel",
+        "de": "https://www.coop.ch/de/",
         "en": "genossenschaft-migros-basel",
         "fr": "fr/migros-basel",
         "it": "it/migros-basel"
@@ -22,14 +22,14 @@
     "short": "aa",
     "slug": {
       "gastro": {
-        "de": "genossenschaft-migros-aare",
-        "en": "genossenschaft-migros-aare",
+        "de": "gastro-migros-aare",
+        "en": "gastro-migros-aare",
         "fr": "fr/migros-aare",
         "it": "it/migros-aare"
       },
       "catering": {
-        "de": "genossenschaft-migros-aare",
-        "en": "genossenschaft-migros-aare",
+        "de": "catering-migros-aare",
+        "en": "catering-migros-aare",
         "fr": "fr/migros-aare",
         "it": "it/migros-aare"
       }
