@@ -51,7 +51,8 @@ export default class Region extends Shadow() {
         --a-text-decoration-hover: none;
         position: absolute;
         z-index: 9999;
-        right: calc((100% - var(--header-default-content-width,var(--content-width, 55%))) / 2)
+        right: calc((100% - var(--header-default-content-width,var(--content-width, 55%))) / 2);
+        width: fit-content;
       }
 
       :host > div {
