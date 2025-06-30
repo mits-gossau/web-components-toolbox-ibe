@@ -1,6 +1,9 @@
 {
     "de": {
-        "headline": "Gastronomische Angebote der Region",
+        "headline": {
+            "gastro": "Gastronomische Angebote der Region",
+            "catering": "Catering-Angebote der Region"
+        },
         "intro": "Die Genossenschaften der Migros verwöhnen dich täglich aufs Neue.",
         "input_label": "PLZ oder Ort eingeben",
         "input_placeholder": "PLZ oder Ort eingeben",
@@ -54,7 +57,10 @@
         }
     },
     "it": {
-        "headline": "Offerte gastronomiche della regione",
+        "headline": {
+            "gastro": "Offerte gastronomiche della regione",
+            "catering": "Offerte catering della regione"
+        },
         "intro": "Le cooperative Migros ti viziano ogni giorno.",
         "input_label": "Inserisci CAP o località",
         "input_placeholder": "Inserisci CAP o località",
@@ -108,7 +114,10 @@
         }
     },
     "fr": {
-        "headline": "Offres gastronomiques de la région",
+        "headline": {
+            "gastro": "Offres gastronomiques de la région",
+            "catering": "Offres de traiteur de la région"
+        },
         "intro": "Les coopératives Migros vous régalent chaque jour.",
         "input_label": "Saisir le code postal ou le lieu",
         "input_placeholder": "Saisir le code postal ou le lieu",

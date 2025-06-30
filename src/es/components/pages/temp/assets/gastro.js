@@ -50,9 +50,9 @@ fetch('../assets/translations.json')
         t = translations[lang] || translations['de']
 
         // Headline
-        document.title = t.headline
+        document.title = t.headline[subdomain] || t.headline['gastro']
         const headline = document.querySelector('.ui-paragraph-headline')
-        if (headline) headline.textContent = t.headline
+        if (headline) headline.textContent = t.headline[subdomain] || t.headline['gastro']
 
         // Intro
         const intro = document.querySelector('.map-intro')
