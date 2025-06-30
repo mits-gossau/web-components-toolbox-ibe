@@ -30,7 +30,7 @@ const fetchLocations = (query) => {
     })
 }
 
-const isValidQuery = (query) => (query.length > 3 && /^\d{1,4}$/.test(query) && query.length <= 4) || (query.length > 1 && /\D/.test(query))
+const isValidQuery = (query) => (query.length > 3 && /^\d{1,4}$/.test(query)) || (query.length > 1 && /\D/.test(query))
 
 const inputField = document.querySelector("#ref-address")
 const resetButton = document.querySelector(".button-reset")
@@ -236,6 +236,7 @@ const displayPopover = (coop, query = undefined) => {
     let gmZip = coop.zip
     if (/^\d{4}$/.test(query)) gmZip = query
     let gmLabel = coop.label
+    const gmCity = coop.city || ''
 
     const cooperativesJSON = fetch("../assets/cooperatives.json")
     cooperativesJSON
@@ -249,13 +250,8 @@ const displayPopover = (coop, query = undefined) => {
                 const cooperativeDisplay = document.querySelector("#cooperative-display")
                 cooperativeDisplay.classList.remove("is-hidden")
                 const plzButton = cooperativeDisplay.querySelector(".ui-output-plz")
-                const plzElement = cooperativeDisplay.querySelector(".ui-js-output-plz")
-                if (gmZip === undefined || gmZip === "") {
-                    gmZip = gmLabel.replace("Migros ", "")
-                    if (plzButton) plzButton.textContent = gmZip
-                } else {
-                    if (plzElement) plzElement.textContent = gmZip
-                }
+                if (gmZip === undefined || gmZip === "") gmZip = query
+                if (plzButton) plzButton.textContent = `${gmZip} ${gmCity}`
                 const stateElement = cooperativeDisplay.querySelector(".ui-js-output-state")
                 let slugValue = (lang === 'de' || !lang) ? coop.slug[subdomain].de : coop.slug[subdomain][lang]
                 let url = ''
