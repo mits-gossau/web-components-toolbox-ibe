@@ -166,16 +166,16 @@
     "short": "zh",
     "slug": {
       "gastro": {
-        "de": "genossenschaft-migros-zurich",
-        "en": "genossenschaft-migros-zurich",
-        "fr": "genossenschaft-migros-zurich",
-        "it": "genossenschaft-migros-zurich"
+        "de": "genossenschaft-migros-zuerich",
+        "en": "genossenschaft-migros-zuerich",
+        "fr": "genossenschaft-migros-zuerich",
+        "it": "genossenschaft-migros-zuerich"
       },
       "catering": {
-         "de": "genossenschaft-migros-zurich",
-        "en": "genossenschaft-migros-zurich",
-        "fr": "genossenschaft-migros-zurich",
-        "it": "genossenschaft-migros-zurich"
+         "de": "genossenschaft-migros-zuerich",
+        "en": "genossenschaft-migros-zuerich",
+        "fr": "genossenschaft-migros-zuerich",
+        "it": "genossenschaft-migros-zuerich"
       }
     }
   }
