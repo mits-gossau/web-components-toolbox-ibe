@@ -76,10 +76,10 @@
     "short": "nf",
     "slug": {
       "gastro": {
-        "de": "genossenschaft-migros-freiburg",
-        "en": "genossenschaft-migros-freiburg",
-        "fr": "fr/migros-neuchatel-fribourg",
-        "it": "it/migros-neuchatel-fribourg"
+        "de": "/fr/migros-neuchatel-fribourg",
+        "en": "/fr/migros-neuchatel-fribourg",
+        "fr": "/fr/migros-neuchatel-fribourg",
+        "it": "/fr/migros-neuchatel-fribourg"
       },
       "catering": {
         "de": "http://www.partyservicenefr.ch/",
@@ -100,10 +100,10 @@
         "it": "genossenschaft-migros-ostschweiz"
       },
       "catering": {
-        "de": "genossenschaft-migros-ostschweiz",
-        "en": "genossenschaft-migros-ostschweiz",
-        "fr": "fr/migros-ostschweiz",
-        "it": "it/migros-ostschweiz"
+        "de": "",
+        "en": "",
+        "fr": "",
+        "it": ""
       }
     }
   },
