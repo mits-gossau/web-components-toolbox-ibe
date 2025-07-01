@@ -30,7 +30,7 @@ const fetchLocations = (query) => {
     })
 }
 
-const isValidQuery = (query) => (/^\d{4}$/.test(query)) || (query.length > 1 && /\D/.test(query))
+const isValidQuery = (query) => (/^\d{4}$/.test(query)) || (query.length > 2 && /\D/.test(query))
 
 const inputField = document.querySelector("#ref-address")
 const searchButton = document.querySelector(".button-search")
