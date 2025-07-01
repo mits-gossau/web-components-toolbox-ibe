@@ -14,47 +14,6 @@
         "your_cooperative": "Ihre Genossenschaft:",
         "to_cooperative": "zur Genossenschaft",
         "popover": {
-<<<<<<< HEAD
-            "aa": {
-                "title": "Migros Aare",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote und vieles mehr."
-            },
-            "bs": {
-                "title": "Migros Basel",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote und vieles mehr."
-            },
-            "ge": {
-                "title": "Migros Genf",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (französisch)."
-            },
-            "lu": {
-                "title": "Migros Luzern",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr."
-            },
-            "nf": {
-                "title": "Migros Neuenburg-Freiburg",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (französisch)."
-            },
-            "os": {
-                "title": "Migros Ostschweiz",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr."
-            },
-            "ti": {
-                "title": "Migros Tessin",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (italienisch)."
-            },
-            "vd": {
-                "title": "Migros Waadt",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (französisch)."
-            },
-            "vs": {
-                "title": "Migros Wallis",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (französisch)."
-            },
-            "zh": {
-                "title": "Migros Zürich",
-                "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr."
-=======
             "gastro": {
                 "aa": {
                     "title": "Migros Aare",
@@ -138,7 +97,6 @@
                     "title": "Migros Zürich Catering",
                     "desc": "Hier findest du Catering-Angebote und Services der Migros Zürich."
                 }
->>>>>>> 86b600a (add popover translation for subdomains)
             }
         }
     },
