@@ -61,7 +61,7 @@ inputField.addEventListener('keydown', function(e) {
 const resetButton = document.querySelector(".button-reset")
 const lang = document.documentElement.getAttribute("lang") || "de"
 let t
-const subdomain = inputField.getAttribute("subdomain") || "gastro"
+const subdomain = document.documentElement.getAttribute("subdomain") || "gastro"
 const errorMessage = document.createElement("div")
 errorMessage.className = "input-error-message"
 errorMessage.style.color = "red"
@@ -112,7 +112,7 @@ fetch('../assets/translations.json')
             .then(cooperatives => {
                 mapMarkers.forEach(marker => {
                     const area = marker.getAttribute("data-map-area")
-                    if (area && t.popover[area]) {
+                    if (area && t.popover[subdomain][area]) {
                         const coop = cooperatives.find(c => c.short === area)
                         let url = ''
                         if (coop && coop.slug && coop.slug[subdomain]) {
@@ -120,8 +120,8 @@ fetch('../assets/translations.json')
                             if (slugValue) url = slugValue.startsWith("https://") ? slugValue : `/${slugValue}`
                         }
                         const popoverContent = /*html*/`
-                            <h2 class="title">${t.popover[area].title}</h2>
-                            <span class="text"><span>${t.popover[area].desc}</span></span>
+                            <h2 class="title">${t.popover[subdomain][area].title}</h2>
+                            <span class="text"><span>${t.popover[subdomain][area].desc}</span></span>
                             <div class="link-wrapper">
                                 <a target="_parent" href="${url}" class="link">${t.to_cooperative}</a>
                             </div>
@@ -283,8 +283,8 @@ const displayPopover = (coop, query = undefined) => {
                 stateElement.textContent = gmLabel
                 stateElement.setAttribute("href", url)
                 const popoverContent = /*html*/`
-                    <h2 class="title">${t.popover[coop.short].title}</h2>
-                    <span class="text"><span>${t.popover[coop.short].desc}</span></span>
+                    <h2 class="title">${t.popover[subdomain][coop.short].title}</h2>
+                    <span class="text"><span>${t.popover[subdomain][coop.short].desc}</span></span>
                     <div class="link-wrapper">
                         <a target="_parent" href="${url}" class="link">${t.to_cooperative}</a>
                     </div>

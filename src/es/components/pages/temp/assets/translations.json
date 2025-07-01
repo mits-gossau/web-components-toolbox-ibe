@@ -14,6 +14,7 @@
         "your_cooperative": "Ihre Genossenschaft:",
         "to_cooperative": "zur Genossenschaft",
         "popover": {
+<<<<<<< HEAD
             "aa": {
                 "title": "Migros Aare",
                 "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote und vieles mehr."
@@ -53,6 +54,91 @@
             "zh": {
                 "title": "Migros Zürich",
                 "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr."
+=======
+            "gastro": {
+                "aa": {
+                    "title": "Migros Aare",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr."
+                },
+                "bs": {
+                    "title": "Migros Basel",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr."
+                },
+                "ge": {
+                    "title": "Migros Genf",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (französisch)."
+                },
+                "lu": {
+                    "title": "Migros Luzern",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr."
+                },
+                "nf": {
+                    "title": "Migros Neuenburg-Freiburg",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (französisch)."
+                },
+                "os": {
+                    "title": "Migros Ostschweiz",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr."
+                },
+                "ti": {
+                    "title": "Migros Tessin",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (italienisch)."
+                },
+                "vd": {
+                    "title": "Migros Waadt",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (französisch)."
+                },
+                "vs": {
+                    "title": "Migros Wallis",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr (französisch)."
+                },
+                "zh": {
+                    "title": "Migros Zürich",
+                    "desc": "Hier findest du den Menüplan der Woche, Migros-Take-Away-Angebote, Catering Services und vieles mehr."
+                }
+            },
+            "catering": {
+                "aa": {
+                    "title": "Migros Aare Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Aare."
+                },
+                "bs": {
+                    "title": "Migros Basel Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Basel."
+                },
+                "ge": {
+                    "title": "Migros Genf Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Genf (französisch)."
+                },
+                "lu": {
+                    "title": "Migros Luzern Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Luzern."
+                },
+                "nf": {
+                    "title": "Migros Neuenburg-Freiburg Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Neuenburg-Freiburg (französisch)."
+                },
+                "os": {
+                    "title": "Migros Ostschweiz Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Ostschweiz."
+                },
+                "ti": {
+                    "title": "Migros Tessin Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Tessin (italienisch)."
+                },
+                "vd": {
+                    "title": "Migros Waadt Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Waadt (französisch)."
+                },
+                "vs": {
+                    "title": "Migros Wallis Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Wallis (französisch)."
+                },
+                "zh": {
+                    "title": "Migros Zürich Catering",
+                    "desc": "Hier findest du Catering-Angebote und Services der Migros Zürich."
+                }
+>>>>>>> 86b600a (add popover translation for subdomains)
             }
         }
     },
@@ -71,45 +157,89 @@
         "your_cooperative": "La tua cooperativa:",
         "to_cooperative": "alla cooperativa",
         "popover": {
-            "aa": {
-                "title": "Migros Aare",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+            "gastro": {
+                "aa": {
+                    "title": "Migros Aare",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                },
+                "bs": {
+                    "title": "Migros Basilea",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                },
+                "ge": {
+                    "title": "Migros Ginevra",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
+                },
+                "lu": {
+                    "title": "Migros Lucerna",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                },
+                "nf": {
+                    "title": "Migros Neuchâtel-Friburgo",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
+                },
+                "os": {
+                    "title": "Migros Svizzera orientale",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                },
+                "ti": {
+                    "title": "Migros Ticino",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (italiano)."
+                },
+                "vd": {
+                    "title": "Migros Vaud",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
+                },
+                "vs": {
+                    "title": "Migros Vallese",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
+                },
+                "zh": {
+                    "title": "Migros Zurigo",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                }
             },
-            "bs": {
-                "title": "Migros Basilea",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
-            },
-            "ge": {
-                "title": "Migros Ginevra",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
-            },
-            "lu": {
-                "title": "Migros Lucerna",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
-            },
-            "nf": {
-                "title": "Migros Neuchâtel-Friburgo",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
-            },
-            "os": {
-                "title": "Migros Svizzera orientale",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
-            },
-            "ti": {
-                "title": "Migros Ticino",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (italiano)."
-            },
-            "vd": {
-                "title": "Migros Vaud",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
-            },
-            "vs": {
-                "title": "Migros Vallese",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
-            },
-            "zh": {
-                "title": "Migros Zurigo",
-                "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+            "catering": {
+                "aa": {
+                    "title": "Migros Aare",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                },
+                "bs": {
+                    "title": "Migros Basilea",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                },
+                "ge": {
+                    "title": "Migros Ginevra",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
+                },
+                "lu": {
+                    "title": "Migros Lucerna",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                },
+                "nf": {
+                    "title": "Migros Neuchâtel-Friburgo",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
+                },
+                "os": {
+                    "title": "Migros Svizzera orientale",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                },
+                "ti": {
+                    "title": "Migros Ticino",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (italiano)."
+                },
+                "vd": {
+                    "title": "Migros Vaud",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
+                },
+                "vs": {
+                    "title": "Migros Vallese",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro (francese)."
+                },
+                "zh": {
+                    "title": "Migros Zurigo",
+                    "desc": "Qui trovi il menu della settimana, offerte Migros Take-Away, servizi di catering e molto altro."
+                }
             }
         }
     },
@@ -128,45 +258,89 @@
         "your_cooperative": "Votre coopérative :",
         "to_cooperative": "vers la coopérative",
         "popover": {
-            "aa": {
-                "title": "Migros Aar",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+            "gastro": {
+                "aa": {
+                    "title": "Migros Aare",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                },
+                "bs": {
+                    "title": "Migros Bâle",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                },
+                "ge": {
+                    "title": "Migros Genève",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
+                },
+                "lu": {
+                    "title": "Migros Lucerne",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                },
+                "nf": {
+                    "title": "Migros Neuchâtel-Fribourg",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
+                },
+                "os": {
+                    "title": "Migros Suisse orientale",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                },
+                "ti": {
+                    "title": "Migros Tessin",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (italien)."
+                },
+                "vd": {
+                    "title": "Migros Vaud",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
+                },
+                "vs": {
+                    "title": "Migros Valais",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
+                },
+                "zh": {
+                    "title": "Migros Zurich",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                }
             },
-            "bs": {
-                "title": "Migros Bâle",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
-            },
-            "ge": {
-                "title": "Migros Genève",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
-            },
-            "lu": {
-                "title": "Migros Lucerne",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
-            },
-            "nf": {
-                "title": "Migros Neuchâtel-Fribourg",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
-            },
-            "os": {
-                "title": "Migros Suisse orientale",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
-            },
-            "ti": {
-                "title": "Migros Tessin",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (italien)."
-            },
-            "vd": {
-                "title": "Migros Vaud",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
-            },
-            "vs": {
-                "title": "Migros Valais",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
-            },
-            "zh": {
-                "title": "Migros Zurich",
-                "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+            "catering": {
+                "aa": {
+                    "title": "Migros Aar",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                },
+                "bs": {
+                    "title": "Migros Bâle",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                },
+                "ge": {
+                    "title": "Migros Genève",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
+                },
+                "lu": {
+                    "title": "Migros Lucerne",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                },
+                "nf": {
+                    "title": "Migros Neuchâtel-Fribourg",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
+                },
+                "os": {
+                    "title": "Migros Suisse orientale",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                },
+                "ti": {
+                    "title": "Migros Tessin",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (italien)."
+                },
+                "vd": {
+                    "title": "Migros Vaud",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
+                },
+                "vs": {
+                    "title": "Migros Valais",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore (français)."
+                },
+                "zh": {
+                    "title": "Migros Zurich",
+                    "desc": "Vous trouverez ici le menu de la semaine, les offres Migros Take-Away, les services traiteur et bien plus encore."
+                }
             }
         }
     }
