@@ -1,6 +1,6 @@
 // gastro.js
 
-const fallbackApiUrl = "https://testadmin.gastro.migros.ch"
+const fallbackApiUrl = "https://admin.gastro.migros.ch"
 let domain = window.location.origin || fallbackApiUrl
 if (domain.includes("localhost")) domain = fallbackApiUrl
 const path = "/api/Cooperative/GetCooperative"
@@ -34,6 +34,7 @@ const isValidQuery = (query) => (/^\d{4}$/.test(query)) || (query.length > 2 && 
 
 const inputField = document.querySelector("#ref-address")
 const searchButton = document.querySelector(".button-search")
+const map = document.querySelector('.js-association-map-svg.img-responsive')
 
 const form = document.querySelector('form')
 if (form) {
@@ -294,7 +295,7 @@ const displayPopover = (coop, query = undefined) => {
                     marker.setAttribute("data-area-url", url)
                     let dataContent = marker.getAttribute("data-content")
                     if (dataContent) marker.setAttribute('data-content', popoverContent)
-                    marker.scrollIntoView({ behavior: "smooth", block: "center" })
+                     map.scrollIntoView({ behavior: "smooth", block: "center" })
                 }
                 if (typeof $(marker).popover === "function") {
                     try {
@@ -310,6 +311,6 @@ const displayPopover = (coop, query = undefined) => {
 
 document.querySelectorAll('.map-marker.ui-js-popover.js-map-popover').forEach(marker => {
     marker.addEventListener('click', function (e) {
-        document.querySelector('.js-association-map-svg.img-responsive').scrollIntoView({ behavior: "smooth", block: "center" })
+        map.scrollIntoView({ behavior: "smooth", block: "center" })
     })
 })
