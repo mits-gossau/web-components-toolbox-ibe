@@ -293,9 +293,8 @@ const displayPopover = (coop, query = undefined) => {
                 if (marker) {
                     marker.setAttribute("data-area-url", url)
                     let dataContent = marker.getAttribute("data-content")
-                    if (dataContent) {
-                        marker.setAttribute('data-content', popoverContent)
-                    }
+                    if (dataContent) marker.setAttribute('data-content', popoverContent)
+                    marker.scrollIntoView({ behavior: "smooth", block: "center" })
                 }
                 if (typeof $(marker).popover === "function") {
                     try {
@@ -308,3 +307,9 @@ const displayPopover = (coop, query = undefined) => {
             }
         })
 }
+
+document.querySelectorAll('.map-marker.ui-js-popover.js-map-popover').forEach(marker => {
+    marker.addEventListener('click', function (e) {
+        document.querySelector('.js-association-map-svg.img-responsive').scrollIntoView({ behavior: "smooth", block: "center" })
+    })
+})
