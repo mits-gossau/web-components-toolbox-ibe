@@ -136,10 +136,10 @@
         "it": "fr/societe-cooperative-migros-vaud"
       },
       "catering": {
-        "de": "genossenschaft-migros-waadt",
-        "en": "genossenschaft-migros-waadt",
-        "fr": "fr/societe-cooperative-migros-vaud",
-        "it": "fr/societe-cooperative-migros-vaud"
+        "de": "fr/catering-services-migros-vaud",
+        "en": "fr/catering-services-migros-vaud",
+        "fr": "fr/catering-services-migros-vaud",
+        "it": "fr/catering-services-migros-vaud"
       }
     }
   },
