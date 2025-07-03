@@ -118,7 +118,7 @@ fetch('../assets/translations.json')
                         let url = ''
                         if (coop && coop.slug && coop.slug[subdomain]) {
                             let slugValue = coop.slug[subdomain][lang] || coop.slug[subdomain].de
-                            if (slugValue) url = slugValue.startsWith("https://") ? slugValue : `/${slugValue}`
+                            if (slugValue) url = (slugValue.startsWith("http://") || slugValue.startsWith("https://")) ? slugValue : `/${slugValue}`
                         }
                         const popoverContent = /*html*/`
                             <h2 class="title">${t.popover[subdomain][area].title}</h2>
@@ -280,7 +280,7 @@ const displayPopover = (coop, query = undefined) => {
                 const stateElement = cooperativeDisplay.querySelector(".ui-js-output-state")
                 let slugValue = (lang === 'de' || !lang) ? coop.slug[subdomain].de : coop.slug[subdomain][lang]
                 let url = ''
-                if (slugValue) url = slugValue.startsWith("https://") ? slugValue : `/${slugValue}`
+                if (slugValue) url = (slugValue.startsWith("http://") || slugValue.startsWith("https://")) ? slugValue : `/${slugValue}`
                 stateElement.textContent = gmLabel
                 stateElement.setAttribute("href", url)
                 const popoverContent = /*html*/`
