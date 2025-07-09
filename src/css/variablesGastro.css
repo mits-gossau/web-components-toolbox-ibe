@@ -162,7 +162,8 @@
   --header-default-align-items-custom: center;
   --header-default-a-menu-icon-padding-top-custom: 0.7em;
   --header-default-width: 100%;
-
+  --header-default-margin-mobile-custom: 1em 0 0;
+  --header-min-height: unset;
   
   /* Navigation */
   --menu-background-color-custom: var(--m-white);
