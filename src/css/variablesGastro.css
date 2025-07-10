@@ -85,6 +85,7 @@
   --bull-li-before-left: -1em;
   --ul-padding-left: 1em;
   --content-with-global: 70%;
+  --ol-margin-mobile: 0  0 1em 0.2em;
   
   /* Content Links */
   --a-color: var(--color-secondary);
