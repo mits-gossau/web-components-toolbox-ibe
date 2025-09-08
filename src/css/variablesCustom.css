@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "HelveticaNowTextBold";
+  font-family: "HelveticaNowTextText";
   font-style: normal;
   font-weight: 700;
   font-stretch: normal;
@@ -50,7 +50,7 @@
 :root {
 /* Fonts */
   --font-family: HelveticaNowDisplay, Helvetica, Arial, sans-serif;
-  --p-font-family: HelveticaNowText, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --p-font-family: HelveticaNowText, Helvetica, Arial, sans-serif;
   --font-size: min(16px, 5vw);
   --font-size-mobile: min(15px, 5vw);
   --p-margin: 0 0 var(--content-spacing, 0) 0;
