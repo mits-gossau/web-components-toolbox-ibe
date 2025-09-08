@@ -1,1 +1,58 @@
 
+
+@import url("https://cdn.fonts.net/t/1.css?apiType=css&projectid=88d2abd3-6ae3-4ca7-9423-e8badee73a16");
+
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowDisplayW05-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowDisplayMedium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  font-style: normal;
+  font-weight: 750;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowDisplayW01-XBdIt.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "HelveticaNowText";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "HelveticaNowTextBold";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Bold.woff2') format('woff2');
+}
+
+:root {
+/* Fonts */
+  --font-family: HelveticaNowDisplay, Helvetica, Arial, sans-serif;
+  --p-font-family: HelveticaNowText, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --font-size: min(16px, 5vw);
+  --font-size-mobile: min(15px, 5vw);
+  --p-margin: 0 0 var(--content-spacing, 0) 0;
+  --p-margin-mobile: 0 0 var(--content-spacing-mobile, 0) 0;
+}
