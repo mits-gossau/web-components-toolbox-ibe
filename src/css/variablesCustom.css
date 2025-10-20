@@ -55,4 +55,5 @@
   --font-size-mobile: min(15px, 5vw);
   --p-margin: 0 0 var(--content-spacing, 0) 0;
   --p-margin-mobile: 0 0 var(--content-spacing-mobile, 0) 0;
+  --color-active: white;
 }
