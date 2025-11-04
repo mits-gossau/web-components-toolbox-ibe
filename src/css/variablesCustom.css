@@ -86,8 +86,8 @@
   --bull-li-before-left: -1em;
   --ul-padding-left: 1em;
   --content-with-global: 70%;
-  --ol-margin-mobile: 0  0 1em 0.2em;
-  
+  --ol-margin-mobile: 0 0 1em 0.2em;
+
   /* Header */
   --header-default-a-logo-top-custom: calc(70px / 2 - 140px / 2);
   --header-default-logo-width-custom: max(140px, 8vw);
@@ -95,13 +95,13 @@
   --header-default-a-menu-icon-background-color-custom: var(--color);
   --header-default-background-color-custom: var(--m-white);
   --header-default-padding: 1rem 0;
-  --header-default-margin-custom: 0;
+  --header-default-margin-custom: 0rem 0rem 3rem 0rem;
   --header-default-content-width: var(--content-with-global);
   --header-default-border-bottom-custom: 1px solid var(--m-gray-500);
+  --navigation-default-header-default-border-bottom: none;
   --header-default-align-items-custom: center;
   --header-default-a-menu-icon-padding-top-custom: 0.7em;
   --header-default-width: 100%;
-  --header-default-margin-mobile-custom: 1em 0 0;
   --header-min-height: unset;
 
   /* Navigation */
@@ -129,4 +129,9 @@
   --navigation-default-h2-font-family: var(--font-family);
   --navigation-default-h2-line-height: 1.75em;
   --navigation-default-border-width: none;
+
+  /* Footer */
+  --footer-default-invert-a-color-hover-custom: var(--color-quarternary);
+  --footer-default-invert-orange-a-color-custom: var(--color-quarternary);
+  --footer-default-invert-orange-a-color-hover-custom: var(--color-quarternary);
 }
